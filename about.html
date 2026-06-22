@@ -4,57 +4,195 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About | Stackly Mental Health Clinic</title>
+    <title>About Us | Meciy Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /* 3D specific overrides */
+        .tilt-card { transform-style: preserve-3d; }
+        .tilt-card-inner { transform: translateZ(40px); } /* Pops content out when tilted */
+        
+        .facility-img { height: 300px; border-radius: 20px; background-size: cover; background-position: center; box-shadow: 0 15px 35px rgba(0, 107, 86, 0.15); border: 4px solid white; }
+        .timeline { border-left: 3px solid var(--primary-light); padding-left: 2rem; position: relative; margin-left: 1rem; }
+        .timeline-step { margin-bottom: 3rem; position: relative; }
+        .timeline-step::before { content: ''; position: absolute; left: -2.7rem; top: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--primary); border: 4px solid white; box-shadow: 0 0 0 3px var(--primary-light); }
+        
+        .accreditation-logo { width: 120px; opacity: 0.6; transition: 0.3s; filter: grayscale(100%); }
+        .accreditation-logo:hover { opacity: 1; filter: grayscale(0%); transform: scale(1.1); }
+    </style>
 </head>
 
 <body>
     <div id="header-placeholder"></div>
 
     <main class="overflow-hidden">
-        <section class="page-hero">
-            <div class="container-xl" data-aos="fade-up">
-                <span class="eyebrow">About Stackly</span>
-                <h1>Clinical care with warmth, structure, and trust.</h1>
-                <p>We help people understand their patterns, steady their emotions, and move forward with a care plan that feels clear.</p>
+        <!-- Hero Section -->
+        <section class="page-hero position-relative">
+            <div class="container-xl position-relative z-1" data-aos="fade-up">
+                <span class="eyebrow" data-tilt data-tilt-scale="1.1">About Meciy Clinic</span>
+                <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">Clinical care with warmth,<br>structure, and trust.</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">We help people understand their patterns, steady their emotions, and move forward with a care plan that feels clear and achievable.</p>
+            </div>
+            
+            <!-- 3D Floating Elements -->
+            <div class="floating-icons">
+                <i class="fas fa-leaf hero-shape" style="top: 20%; left: 10%; font-size: 3rem; color: var(--primary-light);" data-tilt data-tilt-scale="1.5"></i>
+                <i class="fas fa-spa hero-shape" style="top: 60%; right: 15%; font-size: 4rem; color: var(--primary);" data-tilt data-tilt-scale="1.5"></i>
             </div>
         </section>
 
-        <section class="py-5">
+        <!-- Philosophy Section -->
+        <section class="py-5 section-space">
             <div class="container-xl">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div class="large-photo image-bg" style="background-image: url('./assets/images/about-1.webp')"></div>
+                        <div class="large-photo image-bg tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000')">
+                            <div class="tilt-card-inner p-4 d-flex align-items-end h-100">
+                                <span class="badge bg-white text-primary px-3 py-2 rounded-pill shadow">Established 2012</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
                         <span class="section-label">Our Philosophy</span>
-                        <h2>Therapy should feel grounded, not overwhelming.</h2>
-                        <p class="lead-copy">Our clinicians combine evidence-based therapy with thoughtful listening. We make space for your story, then translate it into practical next steps.</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6"><div class="value-card"><span class="material-symbols-outlined">verified_user</span><h3>Qualified Team</h3><p>Licensed therapists with specialized clinical training.</p></div></div>
-                            <div class="col-sm-6"><div class="value-card"><span class="material-symbols-outlined">lock</span><h3>Confidential</h3><p>Private, respectful care from first contact onward.</p></div></div>
-                            <div class="col-sm-6"><div class="value-card"><span class="material-symbols-outlined">route</span><h3>Clear Plans</h3><p>Every client receives a structured path for progress.</p></div></div>
-                            <div class="col-sm-6"><div class="value-card"><span class="material-symbols-outlined">diversity_1</span><h3>Family Focus</h3><p>Care that considers relationships and real life context.</p></div></div>
+                        <h2 class="mb-4">Therapy should feel grounded, not overwhelming.</h2>
+                        <p class="lead-copy mb-5">Our clinicians combine evidence-based therapy with thoughtful listening. We make space for your story, then translate it into practical next steps. Healing is a journey, and we are here to walk it with you.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="value-card tilt-card" data-tilt data-tilt-scale="1.05" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%;">
+                                    <span class="material-symbols-outlined fs-1 text-primary mb-3 tilt-card-inner">verified_user</span>
+                                    <h4 class="h5 fw-bold tilt-card-inner">Qualified Team</h4>
+                                    <p class="text-muted mb-0 tilt-card-inner">Licensed therapists with specialized clinical training.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value-card tilt-card" data-tilt data-tilt-scale="1.05" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%;">
+                                    <span class="material-symbols-outlined fs-1 text-primary mb-3 tilt-card-inner">lock</span>
+                                    <h4 class="h5 fw-bold tilt-card-inner">Confidential</h4>
+                                    <p class="text-muted mb-0 tilt-card-inner">Private, respectful care from first contact onward.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-5 section-soft">
+        <!-- Our Journey Timeline -->
+        <section class="py-5 section-space bg-light">
+            <div class="container-xl">
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <span class="section-label">Our History</span>
+                        <h2 class="mb-4">A decade of healing and growth.</h2>
+                        <p class="text-muted">What started as a small two-person clinic has blossomed into a comprehensive mental wellness center serving thousands of individuals and families across the region.</p>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Team" class="img-fluid rounded-4 shadow-lg mt-4 tilt-card" data-tilt data-tilt-max="10">
+                    </div>
+                    <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
+                        <div class="timeline">
+                            <div class="timeline-step tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                                <h4 class="fw-bold text-primary">2012 - The Beginning</h4>
+                                <p class="text-muted">Founded by Dr. Marcus Thorne and Elena Rodriguez with a mission to make CBT accessible to everyone.</p>
+                            </div>
+                            <div class="timeline-step tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                                <h4 class="fw-bold text-primary">2016 - Expanding Services</h4>
+                                <p class="text-muted">Introduced child psychology and family therapy divisions, growing our team to 15 specialists.</p>
+                            </div>
+                            <div class="timeline-step tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                                <h4 class="fw-bold text-primary">2020 - Virtual Care Launch</h4>
+                                <p class="text-muted">Rapidly deployed our secure telehealth platform, ensuring uninterrupted care during global challenges.</p>
+                            </div>
+                            <div class="timeline-step tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                                <h4 class="fw-bold text-primary">Today - Meciy Clinic</h4>
+                                <p class="text-muted">Now recognized as a regional center of excellence for mental health, serving over 5,000 patients annually.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Showcase (3D) -->
+        <section class="py-5 section-space">
+            <div class="container-xl">
+                <div class="section-heading text-center" data-aos="fade-up">
+                    <span class="section-label">Our Space</span>
+                    <h2>Designed for tranquility</h2>
+                    <p class="text-muted">Our clinic environment is intentionally designed to feel safe, calming, and separate from the noise of the outside world.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="facility-img" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.5" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800');"></div>
+                        <h5 class="text-center mt-3 fw-bold">Welcoming Lobby</h5>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="facility-img" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.5" style="background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=800');"></div>
+                        <h5 class="text-center mt-3 fw-bold">Private Therapy Rooms</h5>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="facility-img" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.5" style="background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800');"></div>
+                        <h5 class="text-center mt-3 fw-bold">Group Session Space</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-5 section-space bg-light">
             <div class="container-xl">
                 <div class="section-heading text-center" data-aos="fade-up">
                     <span class="section-label">Our Team</span>
                     <h2>Specialists who meet you with clarity and care</h2>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up"><article class="team-card"><div class="team-photo image-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDk2pX1YqhEto85cf-xRxUsY6IWrNRy4ccaQWRPGMNpxzRYh7O7wUspSlaYSs_tyjpEeQXsCxOVUvJRcNvpn8GogWZviq5kZkFH78K8xvEqM5mHq_2aVqAPLAnYAQir-Lyk2rg9XFu3BmT6HFzVN3KvtyM5Un5_ssTAXHGQtgxfuecjhTl1-7EnET6yqTebWQErxGSf3Je-kAjrVk1eAPZx9Rh4BjiF8zOtBH6Nz-kUpn9QMkWO_5lmc27ng06tXG9pqtR04-31Ia8')"></div><h3>Philimia D. Darwin</h3><p>Child Psychologist</p></article></div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100"><article class="team-card"><div class="team-photo image-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEnxEjwpV7Pq5QbvMXsznbSJHuvkethGhreFPtRQbDCfV1tjmdCEmMLc7ITOb299NxQeCXwSUOntKM5AMG0ga-kOObjkzMo-YE3UjtaF-_3eyZAuxul2mzeKW4aTIQYqSaE9K3CAXBC-E9fgH7Qm8ZNLktbURbdM6ffQO4gfaNfknbcbDLawFx9OPA1BFqB-spGWqsKTjEFRL_CTuq8ZU0sEM12Z_8MZ1bVz0H36FqycTMXrrVTG0dwn9MhzNGV4NiDVkxpKey5Jc')"></div><h3>Dr. Marcus Thorne</h3><p>CBT Specialist</p></article></div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200"><article class="team-card"><div class="team-photo image-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhjqRUiMawEhCYAd5XqUvjaPC8nTrmAop3BFvUxQKCKGJafBfMFgV_WnUDFTUMc6EzM72y_PJntbHqXPUjzVl30-YF6XvUD155rlGOCrs5N4NQLiIHLMWvCeXSn4Mg2mwzuDvpl30D5fP10druEeKuBME3VCCukTvcmFwcyXs4mjpNMmGx6vuiHBF37qvPcWfH1quUGjyFygtpJhkhYObf5KX8LH3_YcjV61_rvE7Pxm8eeOFs_kiJXscZoRklEVtyH4bGJqdWNN0')"></div><h3>Elena Rodriguez</h3><p>Family Therapist</p></article></div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <article class="team-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="team-photo image-bg" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800')"></div>
+                            <div class="p-4 bg-white text-center rounded-bottom-4 shadow-sm">
+                                <h4 class="fw-bold mb-1">Philimia D. Darwin</h4>
+                                <p class="text-primary fw-semibold mb-3">Child Psychologist</p>
+                                <p class="text-muted small">Specializes in early childhood development and play therapy techniques.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <article class="team-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="team-photo image-bg" style="background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800')"></div>
+                            <div class="p-4 bg-white text-center rounded-bottom-4 shadow-sm">
+                                <h4 class="fw-bold mb-1">Dr. Marcus Thorne</h4>
+                                <p class="text-primary fw-semibold mb-3">CBT Specialist</p>
+                                <p class="text-muted small">Over 15 years experience treating acute anxiety and depressive disorders.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <article class="team-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="team-photo image-bg" style="background-image: url('https://images.unsplash.com/photo-1594824436951-7f126f09ecc6?auto=format&fit=crop&q=80&w=800')"></div>
+                            <div class="p-4 bg-white text-center rounded-bottom-4 shadow-sm">
+                                <h4 class="fw-bold mb-1">Elena Rodriguez</h4>
+                                <p class="text-primary fw-semibold mb-3">Family Therapist</p>
+                                <p class="text-muted small">Dedicated to healing relationship dynamics and couples counseling.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accreditations -->
+        <section class="py-5 border-top border-bottom">
+            <div class="container-xl text-center" data-aos="fade-in">
+                <p class="text-muted text-uppercase fw-bold letter-spacing-1 mb-4">Recognized & Accredited By</p>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+                    <!-- Placeholder Logos for Medical Boards -->
+                    <h4 class="accreditation-logo text-muted fw-bold mb-0"><i class="fas fa-shield-alt me-2"></i>APA</h4>
+                    <h4 class="accreditation-logo text-muted fw-bold mb-0"><i class="fas fa-certificate me-2"></i>NBCC</h4>
+                    <h4 class="accreditation-logo text-muted fw-bold mb-0"><i class="fas fa-award me-2"></i>ACA</h4>
+                    <h4 class="accreditation-logo text-muted fw-bold mb-0"><i class="fas fa-check-circle me-2"></i>AAMFT</h4>
                 </div>
             </div>
         </section>
@@ -63,7 +201,8 @@
     <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla Tilt 3D Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,52 @@
+/* Error Page Specific Styles */
+.error-page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--surface);
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-shadow: 0 10px 30px rgba(0, 107, 86, 0.15);
+}
+
+.error-illustration {
+    font-size: 5rem;
+    color: var(--primary-light);
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.error-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 500px;
+    margin: 0 auto 2.5rem auto;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+    .error-code { font-size: 6rem; }
+    .error-title { font-size: 2rem; }
+}

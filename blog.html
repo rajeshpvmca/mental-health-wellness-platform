@@ -4,133 +4,189 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog | Stackly Mental Health Clinic</title>
+    <title>Blog | Meciy Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+        .tilt-card { transform-style: preserve-3d; }
+        .tilt-card-inner { transform: translateZ(40px); }
+        
+        .blog-card { background: white; border-radius: 20px; overflow: hidden; border: 1px solid var(--outline-variant); box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column; transition: 0.3s; }
+        .blog-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 107, 86, 0.1); border-color: var(--primary-light); }
+        .blog-img { height: 240px; background-size: cover; background-position: center; border-bottom: 3px solid var(--primary); transition: 0.5s; }
+        
+        .featured-post { border-radius: 24px; overflow: hidden; position: relative; min-height: 400px; display: flex; align-items: flex-end; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+        .featured-img { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 0; }
+        .featured-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%); z-index: 1; }
+        .featured-content { position: relative; z-index: 2; padding: 3rem; color: white; width: 100%; }
+        
+        .sidebar-widget { background: white; border-radius: 16px; padding: 2rem; border: 1px solid var(--outline-variant); margin-bottom: 2rem; }
+        .category-list a { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid var(--outline-variant); color: var(--ink); text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .category-list a:hover { color: var(--primary); padding-left: 10px; }
+        .category-list a:last-child { border-bottom: none; }
+    </style>
 </head>
 
 <body>
     <div id="header-placeholder"></div>
 
-    <main class="overflow-hidden">
-        <section class="page-hero">
+    <main class="overflow-hidden bg-light">
+        <!-- Hero Section -->
+        <section class="page-hero pb-0">
             <div class="container-xl" data-aos="fade-up">
-                <span class="eyebrow">Mental Health Hub</span>
-                <h1>Practical guidance for calmer, clearer days.</h1>
-                <p>Therapist-written resources for stress, relationships, parenting, and emotional wellbeing.</p>
+                <span class="eyebrow">Our Resources</span>
+                <h1 class="display-4 fw-bold mb-4">Insights for your mind.</h1>
+                <p class="lead" style="max-width: 600px;">Expert-written articles on mental wellness, therapeutic techniques, and emotional growth.</p>
             </div>
         </section>
 
-         <section class="py-5 section-soft">
+        <section class="section-space py-5">
             <div class="container-xl">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-1.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> Oct 12, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Mental Health</span>
+                <!-- Featured Post (3D) -->
+                <div class="row mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="featured-post tilt-card" data-tilt data-tilt-max="3" data-tilt-glare data-tilt-max-glare="0.2">
+                            <div class="featured-img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1600');"></div>
+                            <div class="featured-overlay"></div>
+                            <div class="featured-content tilt-card-inner">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Featured • Mental Wellness</span>
+                                <h2 class="display-5 fw-bold mb-3">The Quiet Power of Mindful Acceptance</h2>
+                                <p class="lead text-white-50 mb-4" style="max-width: 800px;">Why fighting our anxiety often makes it worse, and how adopting an attitude of radical acceptance can finally break the cycle of panic.</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1594824436951-7f126f09ecc6?auto=format&fit=crop&q=80&w=100" class="rounded-circle border border-2 border-white" width="50" alt="Author">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Elena Rodriguez</h6>
+                                        <small class="text-white-50">Oct 12, 2026 • 8 min read</small>
+                                    </div>
                                 </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">5 Simple Practices for Daily Mindfulness</a></h3>
-                                <p class="text-muted mb-4">Learn how to incorporate mindfulness into your everyday routine to reduce stress and improve focus.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-2.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> Oct 05, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Anxiety</span>
-                                </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">Understanding and Managing Panic Attacks</a></h3>
-                                <p class="text-muted mb-4">A comprehensive guide on recognizing panic attack triggers and effective strategies to calm your mind.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Main Content Grid -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <!-- Post 1 -->
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                                <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
+                                    <div class="blog-img tilt-card-inner" style="background-image: url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=800');"></div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="badge bg-soft-primary text-primary" style="background: rgba(0,107,86,0.1)">Relationships</span>
+                                            <small class="text-muted"><i class="far fa-clock me-1"></i> 5 min</small>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">Setting Boundaries with Family Without Guilt</h4>
+                                        <p class="text-muted mb-4 flex-grow-1">Learn practical scripts and cognitive reframing techniques to establish healthy boundaries during holiday gatherings.</p>
+                                        <a href="#" class="fw-bold text-primary text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </article>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-3.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> Sep 28, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Relationships</span>
-                                </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">How to Communicate Effectively in Marriage</a></h3>
-                                <p class="text-muted mb-4">Discover the key components of healthy communication that strengthen bonds and resolve conflicts.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                            <!-- Post 2 -->
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
+                                    <div class="blog-img tilt-card-inner" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800');"></div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="badge" style="background: rgba(13,202,240,0.1); color: #0dcaf0;">Stress</span>
+                                            <small class="text-muted"><i class="far fa-clock me-1"></i> 6 min</small>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">Understanding the Physical Toll of Burnout</h4>
+                                        <p class="text-muted mb-4 flex-grow-1">Burnout isn't just in your head. Discover how chronic stress alters your cortisol levels and impacts immune function.</p>
+                                        <a href="#" class="fw-bold text-info text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </article>
                             </div>
-                        </article>
+                            <!-- Post 3 -->
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
+                                    <div class="blog-img tilt-card-inner" style="background-image: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&q=80&w=800');"></div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="badge bg-soft-warning text-warning" style="background: rgba(255,193,7,0.1)">Therapy Tips</span>
+                                            <small class="text-muted"><i class="far fa-clock me-1"></i> 4 min</small>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">What to Bring to Your First Therapy Session</h4>
+                                        <p class="text-muted mb-4 flex-grow-1">Nervous about starting therapy? Here is a checklist of thoughts, questions, and expectations to bring with you.</p>
+                                        <a href="#" class="fw-bold text-warning text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Post 4 -->
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
+                                    <div class="blog-img tilt-card-inner" style="background-image: url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800');"></div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="badge" style="background: rgba(32,201,151,0.1); color: #20c997;">Child Psych</span>
+                                            <small class="text-muted"><i class="far fa-clock me-1"></i> 7 min</small>
+                                        </div>
+                                        <h4 class="fw-bold mb-3">Recognizing Hidden Anxiety in Teenagers</h4>
+                                        <p class="text-muted mb-4 flex-grow-1">Sometimes teenage anxiety doesn't look like fear; it looks like anger, perfectionism, or sudden isolation.</p>
+                                        <a href="#" class="fw-bold text-decoration-none mt-auto" style="color: #20c997;">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="mt-5" data-aos="fade-up">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#" style="background-color: var(--primary); border-color: var(--primary);">1</a></li>
+                                <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link text-primary" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link text-primary" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
 
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-4.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> May 15, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Wellness</span>
-                                </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">5 Mindfulness Exercises for Work Stress</a></h3>
-                                <p class="text-muted mb-4">Small exercises that help your nervous system settle during a demanding day.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                    <!-- Sidebar -->
+                    <div class="col-lg-4" data-aos="fade-left">
+                        <!-- Search Widget -->
+                        <div class="sidebar-widget tilt-card" data-tilt data-tilt-max="2">
+                            <h5 class="fw-bold mb-4">Search Articles</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Type keyword...">
+                                <button class="btn text-white" style="background: var(--primary);"><i class="fas fa-search"></i></button>
                             </div>
-                        </article>
-                    </div>
+                        </div>
 
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-5.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> May 28, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Parenting</span>
-                                </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">Understanding Your Child's Emotional Needs</a></h3>
-                                <p class="text-muted mb-4">How to notice distress early and respond with steadiness instead of pressure.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                        <!-- Categories Widget -->
+                        <div class="sidebar-widget tilt-card" data-tilt data-tilt-max="2">
+                            <h5 class="fw-bold mb-4">Categories</h5>
+                            <div class="category-list">
+                                <a href="#">Anxiety & Depression <span class="badge bg-light text-muted">24</span></a>
+                                <a href="#">Mindfulness & Meditation <span class="badge bg-light text-muted">18</span></a>
+                                <a href="#">Relationships & Couples <span class="badge bg-light text-muted">12</span></a>
+                                <a href="#">Child & Adolescent <span class="badge bg-light text-muted">9</span></a>
+                                <a href="#">Therapy Guides <span class="badge bg-light text-muted">7</span></a>
                             </div>
-                        </article>
-                    </div>
+                        </div>
 
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-6.webp'); height: 220px;"></div>
-                            <div class="p-4">
-                                <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
-                                    <span><i class="far fa-calendar-alt me-1"></i> April 28, 2026</span>
-                                    <span>&bull;</span>
-                                    <span>Therapy</span>
-                                </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">CBT vs. DBT: Which Path is Right for You?</a></h3>
-                                <p class="text-muted mb-4">A simple comparison of two common therapy approaches and when each can help.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
-                            </div>
-                        </article>
+                        <!-- Newsletter Widget -->
+                        <div class="sidebar-widget text-center bg-primary text-white border-0 tilt-card" data-tilt data-tilt-max="3" data-tilt-glare data-tilt-max-glare="0.5">
+                            <i class="fas fa-envelope-open-text fs-1 mb-3 text-white-50"></i>
+                            <h5 class="fw-bold mb-3">Weekly Wellness Tips</h5>
+                            <p class="text-white-50 small mb-4">Get practical mental health advice delivered straight to your inbox every Sunday morning.</p>
+                            <input type="email" class="form-control mb-3 text-center" placeholder="Your Email Address">
+                            <button class="btn btn-light w-100 fw-bold text-primary rounded-pill">Subscribe Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
