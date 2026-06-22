@@ -17,15 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (userAvatar) userAvatar.textContent = user.name.charAt(0).toUpperCase();
 
     // Show role badge & correct nav
-    const role = user.role || 'Customer';
+    const role = user.role || 'Patient';
     if (roleBadge) roleBadge.textContent = role;
 
-    const navCustomer = document.getElementById('navCustomer');
-    const navPartner = document.getElementById('navPartner');
+    const navPatient = document.getElementById('navPatient');
+    const navTherapist = document.getElementById('navTherapist');
     const navAdmin = document.getElementById('navAdmin');
 
-    if (navCustomer) navCustomer.style.display = role === 'Customer' ? 'block' : 'none';
-    if (navPartner) navPartner.style.display = role === 'Partner' ? 'block' : 'none';
+    if (navPatient) navPatient.style.display = role === 'Patient' ? 'block' : 'none';
+    if (navTherapist) navTherapist.style.display = role === 'Therapist' ? 'block' : 'none';
     if (navAdmin) navAdmin.style.display = role === 'Admin' ? 'block' : 'none';
 
     // Signout Logic
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define default pages for each role
     const roleDefaults = {
-        'Customer': 'home',
-        'Partner': 'tasks',
+        'Patient': 'home',
+        'Therapist': 'tasks',
         'Admin': 'adminOverview'
     };
 

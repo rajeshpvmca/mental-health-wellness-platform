@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Resources | Meciy Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: var(--surface); padding: 1.5rem; font-family: "Source Sans 3", sans-serif; }
+        .wellness-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid var(--outline-variant); margin-bottom: 1.5rem; transition: transform 0.2s; cursor: pointer; }
+        .wellness-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
+        .wellness-img { height: 160px; background-size: cover; background-position: center; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <h3 class="fw-bold mb-4" style="color: var(--ink);">Wellness Hub</h3>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <div class="wellness-img" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800');"></div>
+                    <div class="p-3">
+                        <span class="badge bg-soft-primary text-primary mb-2" style="background: rgba(0, 107, 86, 0.1);">Meditation</span>
+                        <h6 class="fw-bold">10-Minute Morning Calm</h6>
+                        <p class="text-muted small mb-0">Start your day with a guided breathing exercise to center your mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <div class="wellness-img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800');"></div>
+                    <div class="p-3">
+                        <span class="badge mb-2" style="background: rgba(13, 202, 240, 0.1); color: #0dcaf0;">Article</span>
+                        <h6 class="fw-bold">Managing Work Anxiety</h6>
+                        <p class="text-muted small mb-0">Learn 5 practical tips to handle stress during high-pressure work days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <div class="wellness-img" style="background-image: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&q=80&w=800');"></div>
+                    <div class="p-3">
+                        <span class="badge bg-soft-warning text-warning mb-2" style="background: rgba(255, 193, 7, 0.1);">Exercise</span>
+                        <h6 class="fw-bold">Stretching for Tension Relief</h6>
+                        <p class="text-muted small mb-0">A 5-minute stretching routine you can do right at your desk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
