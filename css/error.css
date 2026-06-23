@@ -1,52 +1,79 @@
 /* Error Page Specific Styles */
-.error-page-wrapper {
+
+.error-page-body {
+    background-color: var(--background);
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.error-section {
+    background: radial-gradient(circle at 10% 20%, rgba(65, 105, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 50%);
+}
+
+.error-texture-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('../assets/images/banner-1.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.03;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.error-blob-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: var(--primary-fixed);
+    opacity: 0.3;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: blur(80px);
+    z-index: 0;
+    animation: blobMorph 15s linear infinite;
+}
+
+.error-glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    border: 2px solid var(--primary-fixed);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 40px 100px rgba(21, 66, 18, 0.12);
+}
+
+.error-display {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--surface);
-    text-align: center;
-    padding: 2rem;
+    gap: 10px;
 }
 
-.error-code {
-    font-size: 8rem;
-    font-weight: 800;
+.digit {
+    font-family: var(--font-display);
+    font-size: clamp(120px, 20vw, 220px);
+    font-weight: 900;
     color: var(--primary);
     line-height: 1;
-    margin-bottom: 1rem;
-    text-shadow: 0 10px 30px rgba(0, 107, 86, 0.15);
+    letter-spacing: -5px;
+    background: linear-gradient(180deg, var(--primary) 30%, var(--primary-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 15px 30px rgba(21, 66, 18, 0.15));
 }
 
-.error-illustration {
-    font-size: 5rem;
-    color: var(--primary-light);
-    margin-bottom: 2rem;
-    animation: float 3s ease-in-out infinite;
+.icon-center {
+    animation: heroPulse 4s ease-in-out infinite;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.error-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--ink);
-    margin-bottom: 1rem;
-}
-
-.error-message {
-    font-size: 1.1rem;
-    color: var(--muted);
-    max-width: 500px;
-    margin: 0 auto 2.5rem auto;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
-@media (max-width: 768px) {
-    .error-code { font-size: 6rem; }
-    .error-title { font-size: 2rem; }
+.icon-center .material-symbols-outlined {
+    font-size: clamp(60px, 10vw, 120px);
+    opacity: 0.9;
 }
