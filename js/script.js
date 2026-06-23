@@ -29,35 +29,41 @@ function initHeroSwiper() {
     });
 }
 
- new Swiper(".testimonial-slider", {
-    loop: true,
-    speed: 5000,
-    spaceBetween: 30,
-    grabCursor: true,
+function initTestimonialSwiper() {
+    if (typeof Swiper === "undefined") return;
+    const slider = document.querySelector(".testimonial-slider");
+    if (!slider) return;
 
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: false
-    },
+    new Swiper(".testimonial-slider", {
+        loop: true,
+        speed: 5000,
+        spaceBetween: 30,
+        grabCursor: true,
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false
         },
-        768: {
-            slidesPerView: 2
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            }
         },
-        1200: {
-            slidesPerView: 3
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
         }
-    },
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    }
-});
+    });
+}
 
 function setActiveNav(root) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
@@ -93,5 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ]).then(() => {
         initAOS();
         initHeroSwiper();
+        initTestimonialSwiper();
     });
 });
