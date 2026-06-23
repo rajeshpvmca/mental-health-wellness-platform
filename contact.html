@@ -7,26 +7,89 @@
     <title>Contact Us | Stackly Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        .tilt-card { transform-style: preserve-3d; }
-        .tilt-card-inner { transform: translateZ(40px); }
-        
-        .contact-info-card { background: white; border-radius: 20px; padding: 2.5rem; text-align: center; border: 1px solid var(--outline-variant); box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; transition: 0.3s; }
-        .contact-icon { width: 80px; height: 80px; border-radius: 50%; background: rgba(0, 107, 86, 0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1.5rem auto; transition: 0.3s; }
-        .contact-info-card:hover .contact-icon { background: var(--primary); color: white; transform: scale(1.1); }
-        
-        .contact-form-wrap { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
-        .form-control { border-radius: 12px; padding: 12px 20px; background-color: var(--surface); border-color: var(--outline-variant); }
-        .form-control:focus { box-shadow: 0 0 0 0.25rem rgba(0, 107, 86, 0.25); border-color: var(--primary); }
-        
-        .accordion-button:not(.collapsed) { background-color: rgba(0, 107, 86, 0.1); color: var(--primary); box-shadow: none; }
-        .accordion-button:focus { box-shadow: none; border-color: rgba(0,0,0,.125); }
-        
-        .map-container { border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); height: 450px; }
+        .tilt-card {
+            transform-style: preserve-3d;
+        }
+
+        .tilt-card-inner {
+            transform: translateZ(40px);
+        }
+
+        .contact-info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid var(--outline-variant);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(0, 107, 86, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 1.5rem auto;
+            transition: 0.3s;
+        }
+
+        .contact-info-card:hover .contact-icon {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .contact-form-wrap {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-control {
+            border-radius: 12px;
+            padding: 12px 20px;
+            background-color: var(--surface);
+            border-color: var(--outline-variant);
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(0, 107, 86, 0.25);
+            border-color: var(--primary);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 107, 86, 0.1);
+            color: var(--primary);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, .125);
+        }
+
+        .map-container {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            height: 450px;
+        }
     </style>
 </head>
 
@@ -39,10 +102,13 @@
             <div class="container-xl position-relative z-1" data-aos="fade-up">
                 <span class="eyebrow" data-tilt data-tilt-scale="1.1">Contact Us</span>
                 <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">We're here to listen.</h1>
-                <p class="lead" style="max-width: 600px; margin: 0 auto;">Whether you're ready to book your first session or just have a few questions, our care team is ready to assist you.</p>
+                <p class="lead" style="max-width: 600px; margin: 0 auto;">Whether you're ready to book your first
+                    session or just have a few questions, our care team is ready to assist you.</p>
             </div>
             <div class="floating-icons">
-                <i class="fas fa-comments hero-shape" style="top: 20%; right: 15%; font-size: 3rem; color: var(--primary-light);" data-tilt data-tilt-scale="1.5"></i>
+                <i class="fas fa-comments hero-shape"
+                    style="top: 20%; right: 15%; font-size: 3rem; color: var(--primary-light);" data-tilt
+                    data-tilt-scale="1.5"></i>
             </div>
         </section>
 
@@ -51,42 +117,50 @@
             <div class="container-xl">
                 <div class="row justify-content-center g-4">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
                                 <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                                 <h4 class="fw-bold mb-3">Visit the Clinic</h4>
                                 <p class="font-label-sm  mb-0">
                                     <a href="https://www.google.com/maps/search/?api=1&query=MMR+Complex,+Chinna+Thirupathi,+Salem,+Tamil+Nadu+636008"
-                                        target="_blank" class="text-decoration-none text-muted">MMR Complex, Chinna Thirupathi,
+                                        target="_blank" class="text-decoration-none text-muted">MMR Complex, Chinna
+                                        Thirupathi,
                                         Salem, Tamil Nadu 636008</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
                                 <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                                 <h4 class="fw-bold mb-3">Call Us</h4>
                                 <p class="font-label-sm  mb-1">
-                                    <a href="tel:+91 9876543210" class="text-decoration-none text-muted">+91 9876543210</a>
+                                    <a href="tel:+91 9876543210" class="text-decoration-none text-muted">+91
+                                        9876543210</a>
                                 </p>
                                 <p class="font-label-sm mb-0">
-                                    <a href="tel:+91 8790543126" class="text-decoration-none text-muted">+91 8790543126</a>
+                                    <a href="tel:+91 8790543126" class="text-decoration-none text-muted">+91
+                                        8790543126</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="contact-info-card tilt-card" data-tilt data-tilt-max="15" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
                                 <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                                 <h4 class="fw-bold mb-3">Email Us</h4>
                                 <p class="font-label-sm mb-1">
-                                    <a href="mailto:support@stacklyclinic.com" class="text-decoration-none text-muted">support@stacklyclinic.com</a>
+                                    <a href="mailto:support@stacklyclinic.com"
+                                        class="text-decoration-none text-muted">support@stacklyclinic.com</a>
                                 </p>
                                 <p class="font-label-sm  mb-0">
-                                    <a href="mailto:info@stacklyclinic.com" class="text-decoration-none text-muted">info@stacklyclinic.com</a>
+                                    <a href="mailto:info@stacklyclinic.com"
+                                        class="text-decoration-none text-muted">info@stacklyclinic.com</a>
                                 </p>
                             </div>
                         </div>
@@ -100,21 +174,28 @@
             <div class="container-xl">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div class="contact-form-wrap tilt-card" data-tilt data-tilt-max="2">
+                        <div class="contact-form-wrap >
                             <h3 class="fw-bold mb-4">Send us a secure message</h3>
-                            <form>
+                            <form id="contactForm" action="404.html">
                                 <div class="row g-3">
                                     <div class="col-sm-6">
                                         <label class="form-label fw-bold small text-muted">First Name</label>
-                                        <input type="text" class="form-control" placeholder="Jane">
+                                        <input type="text" class="form-control" placeholder="Jane" pattern="[A-Za-z\s]+"
+                                            oninput="
+                       this.value = this.value.replace(/[^A-Za-z\s]/g, '')
+                     " required>
                                     </div>
                                     <div class="col-sm-6">
                                         <label class="form-label fw-bold small text-muted">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Doe">
+                                        <input type="text" class="form-control" placeholder="Doe" pattern="[A-Za-z\s]+"
+                                            oninput="
+                       this.value = this.value.replace(/[^A-Za-z\s]/g, '')
+                     " required>
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label fw-bold small text-muted">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="jane@example.com">
+                                        <input type="email" class="form-control" placeholder="jane@example.com"
+                                            required>
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label fw-bold small text-muted">I'm interested in...</label>
@@ -127,20 +208,28 @@
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label fw-bold small text-muted">Message</label>
-                                        <textarea class="form-control" rows="4" placeholder="How can we help you?"></textarea>
+                                        <textarea class="form-control" rows="4" placeholder="How can we help you?"
+                                            required></textarea>
                                     </div>
                                     <div class="col-12 mt-4">
-                                        <button type="submit" class="thm-btn-primary w-100 rounded-pill py-3 fw-bold fs-5 tilt-card-inner" style="border: none;">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                                        <button type="submit"
+                                            class="thm-btn-primary w-100 rounded-pill py-3 fw-bold fs-5"
+                                            style="border: none;">Send Message <i
+                                                class="fas fa-paper-plane ms-2"></i></button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6" data-aos="fade-left">
-                        <div class="map-container tilt-card" data-tilt data-tilt-max="3" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="map-container tilt-card" data-tilt data-tilt-max="3" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <!-- Google Maps Embed -->
-                            <iframe src="https://maps.google.com/maps?q=MMR+Complex,+Chinna+Thirupathi,+Salem,+Tamil+Nadu+636008&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://maps.google.com/maps?q=MMR+Complex,+Chinna+Thirupathi,+Salem,+Tamil+Nadu+636008&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -154,41 +243,49 @@
                     <span class="section-label">FAQ</span>
                     <h2>Common Questions</h2>
                 </div>
-                
+
                 <div class="accordion tilt-card" id="faqAccordion" data-aos="fade-up" data-tilt data-tilt-max="2">
                     <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                         <h2 class="accordion-header">
-                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
                                 Do you accept insurance?
                             </button>
                         </h2>
                         <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Yes, we are in-network with most major insurance providers including BlueCross, Aetna, and Cigna. We recommend calling your insurance company to verify your behavioral health benefits before your first visit.
+                                Yes, we are in-network with most major insurance providers including BlueCross, Aetna,
+                                and Cigna. We recommend calling your insurance company to verify your behavioral health
+                                benefits before your first visit.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
                                 What is your cancellation policy?
                             </button>
                         </h2>
                         <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                We require a 24-hour notice for cancellations. Appointments canceled with less than 24 hours notice will incur a full session fee, as that time was reserved exclusively for you.
+                                We require a 24-hour notice for cancellations. Appointments canceled with less than 24
+                                hours notice will incur a full session fee, as that time was reserved exclusively for
+                                you.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item border-0 rounded-4 shadow-sm overflow-hidden">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
                                 Do you offer virtual/telehealth appointments?
                             </button>
                         </h2>
                         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Absolutely. We use a secure, HIPAA-compliant video platform for our telehealth sessions, allowing you to receive care from the comfort of your own home.
+                                Absolutely. We use a secure, HIPAA-compliant video platform for our telehealth sessions,
+                                allowing you to receive care from the comfort of your own home.
                             </div>
                         </div>
                     </div>
@@ -203,4 +300,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
