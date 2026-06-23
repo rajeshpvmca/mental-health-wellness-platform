@@ -23,6 +23,26 @@ body {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+body.loading {
+    overflow: hidden;
+}
+
+#header-placeholder,
+#footer-placeholder,
+.main-content {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-loaded #header-placeholder,
+.content-loaded #footer-placeholder,
+.content-loaded .main-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
 .text-primary{
     color: var(--primary) !important;
 }
@@ -1176,4 +1196,127 @@ h2 {
     .doctor-quote .material-symbols-outlined.ms-auto {
         display: none;
     }
+}
+
+/* Floating Icons Animation */
+        .floating-icons .hero-shape {
+            position: absolute;
+            color: var(--primary-light);
+            opacity: 0.2;
+            z-index: 1;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .hero-shape-1 { top: 10%; left: 5%; font-size: 60px; animation: heroFloat 8s ease-in-out infinite; }
+        .hero-shape-2 { top: 15%; right: 8%; font-size: 50px; animation: heroRotate 15s linear infinite; }
+        .hero-shape-3 { bottom: 15%; left: 10%; font-size: 45px; animation: heroFloat 9s ease-in-out infinite 1.5s; }
+        .hero-shape-4 { bottom: 20%; right: 12%; font-size: 55px; animation: heroPulse 6s ease-in-out infinite; }
+        .hero-shape-5 { top: 45%; left: 3%; font-size: 35px; animation: heroRotate 12s linear infinite reverse; }
+        .hero-shape-6 { top: 60%; right: 5%; font-size: 40px; animation: heroFloat 12s ease-in-out infinite 1s reverse; }
+        .hero-shape-7 { bottom: 40%; left: 18%; font-size: 30px; animation: heroFloat 8.5s ease-in-out infinite 0.8s; }
+        .hero-shape-8 { top: 5%; left: 45%; font-size: 45px; animation: heroPulse 10s ease-in-out infinite; }
+
+/* --- Unique Modern Preloader --- */
+.preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: var(--background);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.loader-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-top: 3px solid var(--primary);
+    border-right: 3px solid var(--primary-light);
+    border-radius: 50%;
+    animation: loaderSpin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+.loader-icon {
+    font-size: 4rem;
+    color: var(--primary);
+    filter: drop-shadow(0 0 15px rgba(62, 255, 18, 0.5));
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+.loader-text {
+    color: var(--primary-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary-soft) 20%, var(--primary-light) 40%, var(--primary-light) 60%, var(--ink) 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+}
+
+/* .loader-text span { color: var(--primary-light); font-style: italic; } */
+
+.progress-bar-wrap {
+    width: 200px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 15px auto 0;
+    overflow: hidden;
+}
+
+.progress-line {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    box-shadow: 0 0 10px var(--primary);
+    animation: progressFill 2.5s ease-in-out forwards;
+}
+
+@keyframes loaderSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.8); opacity: 0.7; }
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+@keyframes progressFill {
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
