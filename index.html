@@ -9,12 +9,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        .tilt-card { transform-style: preserve-3d; }
-        .tilt-card-inner { transform: translateZ(30px); }
+        .tilt-card {
+            transform-style: preserve-3d;
+        }
+
+        .tilt-card-inner {
+            transform: translateZ(30px);
+        }
     </style>
 </head>
 
@@ -22,96 +30,114 @@
     <div id="header-placeholder"></div>
 
     <main class="overflow-hidden">
-        <div class="hero-slider-wrapper position-relative">
-            <div class="swiper heroSwiper">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide hero-section image-bg" style="background-image: url('./assets/images/banner-3.webp')">
-                        <div class="hero-overlay"></div>
-                        <div class="container-xl position-relative w-100">
-                            <div class="row align-items-center g-5">
-                                <div class="col-lg-7">
-                                    <span class="eyebrow" data-aos="fade-right">Welcome to Stackly Clinic</span>
-                                    <h1 data-aos="fade-right" data-aos-delay="100">Therapy Makes Your <span>Family Excellent</span></h1>
-                                    <p class="lead-copy" data-aos="fade-right" data-aos-delay="200">Professional, structured, and deeply human mental health care for every season of life.</p>
-                                    <div class="d-flex flex-column flex-sm-row gap-3" data-aos="fade-right" data-aos-delay="300">
-                                        <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span class="material-symbols-outlined">arrow_forward</span></a>
-                                        <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
+        <section class="overflow-hidden">
+            <div class="hero-slider-wrapper position-relative">
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide hero-section image-bg"
+                            style="background-image: url('./assets/images/banner-3.webp')">
+                            <div class="hero-overlay"></div>
+                            <div class="container-xl position-relative w-100">
+                                <div class="row align-items-center g-5">
+                                    <div class="col-lg-7">
+                                        <span class="eyebrow" data-aos="fade-right">Welcome to Stackly Clinic</span>
+                                        <h1 data-aos="fade-right" data-aos-delay="100">Therapy Makes Your <span>Family
+                                                Excellent</span></h1>
+                                        <p class="lead-copy" data-aos="fade-right" data-aos-delay="200">Professional,
+                                            structured, and deeply human mental health care for every season of life.
+                                        </p>
+                                        <div class="d-flex flex-column flex-sm-row gap-3" data-aos="fade-right"
+                                            data-aos-delay="300">
+                                            <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span
+                                                    class="material-symbols-outlined">arrow_forward</span></a>
+                                            <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class="hero-note glass-card">
-                                        <div class="icon-bubble"><span class="material-symbols-outlined">sentiment_very_satisfied</span></div>
-                                        <div>
-                                            <p class="fw-bold mb-1">98% Satisfaction</p>
-                                            <p class="small text-secondary mb-0">Client care feedback</p>
+                                    <div class="col-lg-5 d-none d-lg-block" data-aos="zoom-in" data-aos-delay="150">
+                                        <div class="hero-note glass-card">
+                                            <div class="icon-bubble"><span
+                                                    class="material-symbols-outlined">sentiment_very_satisfied</span>
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-1">98% Satisfaction</p>
+                                                <p class="small text-secondary mb-0">Client care feedback</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide hero-section image-bg" style="background-image: url('./assets/images/banner-3.webp')">
-                        <div class="hero-overlay"></div>
-                        <div class="container-xl position-relative w-100">
-                            <div class="row align-items-center g-5">
-                                <div class="col-lg-7">
-                                    <span class="eyebrow">Empower Your Mind</span>
-                                    <h1>Overcome Anxiety with <span>Expert Care</span></h1>
-                                    <p class="lead-copy">Structured treatment designed to manage stress, panic, and chronic worry effectively.</p>
-                                    <div class="d-flex flex-column flex-sm-row gap-3">
-                                        <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span class="material-symbols-outlined">arrow_forward</span></a>
-                                        <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <div class="hero-note glass-card">
-                                        <div class="icon-bubble"><span class="material-symbols-outlined">psychology</span></div>
-                                        <div>
-                                            <p class="fw-bold mb-1">Expert Therapists</p>
-                                            <p class="small text-secondary mb-0">Certified Professionals</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide hero-section image-bg" style="background-image: url('./assets/images/banner-3.webp')">
-                        <div class="hero-overlay"></div>
-                        <div class="container-xl position-relative w-100">
-                            <div class="row align-items-center g-5">
-                                <div class="col-lg-7">
-                                    <span class="eyebrow">Stronger Bonds</span>
-                                    <h1>Healing Relationships & <span>Families</span></h1>
-                                    <p class="lead-copy">Strengthening ties and resolving long-standing family conflicts with guided support.</p>
-                                    <div class="d-flex flex-column flex-sm-row gap-3">
-                                        <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span class="material-symbols-outlined">arrow_forward</span></a>
-                                        <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <div class="hero-note glass-card">
-                                        <div class="icon-bubble"><span class="material-symbols-outlined">family_restroom</span></div>
-                                        <div>
-                                            <p class="fw-bold mb-1">Family Counseling</p>
-                                            <p class="small text-secondary mb-0">Rebuild your relationships</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-            </div>
-        </div>
 
-        <section class="py-5">
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide hero-section image-bg"
+                            style="background-image: url('./assets/images/banner-3.webp')">
+                            <div class="hero-overlay"></div>
+                            <div class="container-xl position-relative w-100">
+                                <div class="row align-items-center g-5">
+                                    <div class="col-lg-7">
+                                        <span class="eyebrow">Empower Your Mind</span>
+                                        <h1>Overcome Anxiety with <span>Expert Care</span></h1>
+                                        <p class="lead-copy">Structured treatment designed to manage stress, panic, and
+                                            chronic worry effectively.</p>
+                                        <div class="d-flex flex-column flex-sm-row gap-3">
+                                            <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span
+                                                    class="material-symbols-outlined">arrow_forward</span></a>
+                                            <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 d-none d-lg-block">
+                                        <div class="hero-note glass-card">
+                                            <div class="icon-bubble"><span
+                                                    class="material-symbols-outlined">psychology</span></div>
+                                            <div>
+                                                <p class="fw-bold mb-1">Expert Therapists</p>
+                                                <p class="small text-secondary mb-0">Certified Professionals</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide hero-section image-bg"
+                            style="background-image: url('./assets/images/banner-3.webp')">
+                            <div class="hero-overlay"></div>
+                            <div class="container-xl position-relative w-100">
+                                <div class="row align-items-center g-5">
+                                    <div class="col-lg-7">
+                                        <span class="eyebrow">Stronger Bonds</span>
+                                        <h1>Healing Relationships & <span>Families</span></h1>
+                                        <p class="lead-copy">Strengthening ties and resolving long-standing family
+                                            conflicts with guided support.</p>
+                                        <div class="d-flex flex-column flex-sm-row gap-3">
+                                            <a class="btn thm-btn-primary" href="contact.html">Book Consultation <span
+                                                    class="material-symbols-outlined">arrow_forward</span></a>
+                                            <a class="btn thm-btn-outline" href="services.html">Explore Services</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 d-none d-lg-block">
+                                        <div class="hero-note glass-card">
+                                            <div class="icon-bubble"><span
+                                                    class="material-symbols-outlined">family_restroom</span></div>
+                                            <div>
+                                                <p class="fw-bold mb-1">Family Counseling</p>
+                                                <p class="small text-secondary mb-0">Rebuild your relationships</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 overflow-hidden">
             <div class="container-xl">
                 <div class="row g-4">
                     <div class="col-md-6 col-xl-3" data-aos="fade-up">
@@ -146,11 +172,12 @@
             </div>
         </section>
 
-        <section class="py-5 section-soft">
+        <section class="py-5 section-soft overflow-hidden">
             <div class="container-xl">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div class="video-tile image-bg tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2" style="background-image: url('./assets/images/about.webp')">
+                        <div class="video-tile image-bg tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                            data-tilt-max-glare="0.2" style="background-image: url('./assets/images/about.webp')">
                             <!-- <span class="play-btn material-symbols-outlined">play_arrow</span> -->
                         </div>
                         <div class="experience-box"><strong>12+</strong><span>Years of Clinical Experience</span></div>
@@ -158,11 +185,14 @@
                     <div class="col-lg-6" data-aos="fade-left">
                         <span class="section-label">About Our Clinic</span>
                         <h2>Restoring balance to your mind and family life</h2>
-                        <p class="lead-copy">Stackly combines modern clinical methodology with calm, respectful care. Our therapists build clear plans so each client knows what progress can look like.</p>
+                        <p class="lead-copy">Stackly combines modern clinical methodology with calm, respectful care.
+                            Our therapists build clear plans so each client knows what progress can look like.</p>
                         <ul class="check-list">
-                            <li><span class="material-symbols-outlined">check_circle</span> Licensed professional therapists</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Licensed professional
+                                therapists</li>
                             <li><span class="material-symbols-outlined">check_circle</span> Personalized care plans</li>
-                            <li><span class="material-symbols-outlined">check_circle</span> Confidential and safe environment</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Confidential and safe
+                                environment</li>
                         </ul>
                         <a class="btn thm-btn-primary" href="about.html">Learn More</a>
                     </div>
@@ -171,36 +201,48 @@
         </section>
 
         <!-- Why Choose Us -->
-        <section class="py-5">
+        <section class="py-5 overflow-hidden">
             <div class="container-xl">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                        <div class="video-tile image-bg tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2" style="background-image: url('./assets/images/why-choose.webp');"></div>
+                        <div class="video-tile image-bg tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                            data-tilt-max-glare="0.2" style="background-image: url('./assets/images/why-choose.webp');">
+                        </div>
                     </div>
                     <div class="col-lg-6 order-lg-1" data-aos="fade-right">
                         <span class="section-label">Why Choose Us</span>
                         <h2>Dedicated to Your Mental Well-being</h2>
-                        <p class="lead-copy">We provide a compassionate, evidence-based approach to mental health, tailored specifically to your unique needs and goals.</p>
+                        <p class="lead-copy">We provide a compassionate, evidence-based approach to mental health,
+                            tailored specifically to your unique needs and goals.</p>
                         <div class="mt-4">
                             <div class="d-flex gap-3 mb-4">
-                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span class="material-symbols-outlined" style="font-size: 1.5rem;">verified</span></div>
+                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span
+                                        class="material-symbols-outlined" style="font-size: 1.5rem;">verified</span>
+                                </div>
                                 <div>
                                     <h4 class="fw-bold fs-5 mb-1">Licensed Professionals</h4>
-                                    <p class="text-muted mb-0">Our team consists of highly qualified, certified therapists with years of clinical experience.</p>
+                                    <p class="text-muted mb-0">Our team consists of highly qualified, certified
+                                        therapists with years of clinical experience.</p>
                                 </div>
                             </div>
                             <div class="d-flex gap-3 mb-4">
-                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span class="material-symbols-outlined" style="font-size: 1.5rem;">favorite</span></div>
+                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span
+                                        class="material-symbols-outlined" style="font-size: 1.5rem;">favorite</span>
+                                </div>
                                 <div>
                                     <h4 class="fw-bold fs-5 mb-1">Personalized Care</h4>
-                                    <p class="text-muted mb-0">We understand that every individual is different, so we customize our therapy plans for you.</p>
+                                    <p class="text-muted mb-0">We understand that every individual is different, so we
+                                        customize our therapy plans for you.</p>
                                 </div>
                             </div>
                             <div class="d-flex gap-3">
-                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span class="material-symbols-outlined" style="font-size: 1.5rem;">shield_lock</span></div>
+                                <div class="icon-box" style="width: 3rem; height: 3rem; flex-shrink: 0;"><span
+                                        class="material-symbols-outlined" style="font-size: 1.5rem;">shield_lock</span>
+                                </div>
                                 <div>
                                     <h4 class="fw-bold fs-5 mb-1">Confidential Environment</h4>
-                                    <p class="text-muted mb-0">Your privacy and safety are our top priority. We offer a secure space to share and heal.</p>
+                                    <p class="text-muted mb-0">Your privacy and safety are our top priority. We offer a
+                                        secure space to share and heal.</p>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +251,7 @@
             </div>
         </section>
 
-        <section class="py-5 section-soft">
+        <section class="py-5 section-soft overflow-hidden">
             <div class="container-xl">
                 <div class="section-heading text-center" data-aos="fade-up">
                     <span class="section-label">What We Do</span>
@@ -218,20 +260,38 @@
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/service-1.webp')"></div>
-                            <div class="card-body"><h3>Relationship Therapy</h3><p>Repairing bonds and building healthier communication patterns.</p><a href="services.html">Read More <span class="material-symbols-outlined">arrow_forward</span></a></div>
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/service-1.webp')"></div>
+                            <div class="card-body">
+                                <h3>Relationship Therapy</h3>
+                                <p>Repairing bonds and building healthier communication patterns.</p><a
+                                    href="services.html">Read More <span
+                                        class="material-symbols-outlined">arrow_forward</span></a>
+                            </div>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <article class="service-card">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/service-2.webp')"></div>
-                            <div class="card-body"><h3>Anxiety Disorder</h3><p>Structured treatment to manage stress, panic, and chronic worry.</p><a href="services.html">Read More <span class="material-symbols-outlined">arrow_forward</span></a></div>
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/service-2.webp')"></div>
+                            <div class="card-body">
+                                <h3>Anxiety Disorder</h3>
+                                <p>Structured treatment to manage stress, panic, and chronic worry.</p><a
+                                    href="services.html">Read More <span
+                                        class="material-symbols-outlined">arrow_forward</span></a>
+                            </div>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <article class="service-card">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/service-3.webp')"></div>
-                            <div class="card-body"><h3>Family Counseling</h3><p>Strengthening ties and resolving long-standing family conflicts.</p><a href="services.html">Read More <span class="material-symbols-outlined">arrow_forward</span></a></div>
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/service-3.webp')"></div>
+                            <div class="card-body">
+                                <h3>Family Counseling</h3>
+                                <p>Strengthening ties and resolving long-standing family conflicts.</p><a
+                                    href="services.html">Read More <span
+                                        class="material-symbols-outlined">arrow_forward</span></a>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -239,91 +299,88 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="py-5">
-    <div class="container-xl">
-        <div class="section-heading text-center mb-5" data-aos="fade-up">
-            <span class="section-label">Testimonials</span>
-            <h2>What Our Clients Say</h2>
-        </div>
-
-        <div class="swiper testimonial-slider" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-
-                <!-- Slide 1 -->
-                <div class="swiper-slide h-auto">
-                    <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-                        <p>"Stackly clinic helped our family communicate better. The therapist was incredibly understanding."</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/author.webp" class="avatar" alt="">
-                            <div>
-                                <h4>Sarah Jenkins</h4>
-                                <span>Family Therapy</span>
-                            </div>
-                        </div>
-                    </article>
+        <section class="py-5 overflow-hidden">
+            <div class="container-xl">
+                <div class="section-heading text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Testimonials</span>
+                    <h2>What Our Clients Say</h2>
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide h-auto">
-                    <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
-                        <div class="stars">
-                            ★★★★★
+                <div class="swiper testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide h-auto">
+                            <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                                data-tilt-max-glare="0.2">
+                                <div class="stars">
+                                    ★★★★★
+                                </div>
+                                <p>"Stackly clinic helped our family communicate better. The therapist was incredibly
+                                    understanding."</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/author.webp" class="avatar" alt="">
+                                    <div>
+                                        <h4>Sarah Jenkins</h4>
+                                        <span>Family Therapy</span>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                        <p>"The structured plan gave me the tools to manage my stress effectively."</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/author.webp" class="avatar" alt="">
-                            <div>
-                                <h4>David Ross</h4>
-                                <span>Anxiety Support</span>
-                            </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide h-auto">
+                            <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                                data-tilt-max-glare="0.2">
+                                <div class="stars">
+                                    ★★★★★
+                                </div>
+                                <p>"The structured plan gave me the tools to manage my stress effectively."</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/author.webp" class="avatar" alt="">
+                                    <div>
+                                        <h4>David Ross</h4>
+                                        <span>Anxiety Support</span>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide h-auto">
+                            <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                                data-tilt-max-glare="0.2">
+                                <div class="stars">
+                                    ★★★★★
+                                </div>
+                                <p>"A wonderful environment for children. Highly recommended."</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/author.webp" class="avatar" alt="">
+                                    <div>
+                                        <h4>Emily Chen</h4>
+                                        <span>Child Psychology</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Duplicate Slides -->
+                        <div class="swiper-slide h-auto">
+                            <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                                data-tilt-max-glare="0.2">
+                                <div class="stars">★★★★★</div>
+                                <p>"Amazing support and guidance throughout the process."</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/author.webp" class="avatar" alt="">
+                                    <div>
+                                        <h4>Michael Lee</h4>
+                                        <span>Therapy Client</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide h-auto">
-                    <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-                        <p>"A wonderful environment for children. Highly recommended."</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/author.webp" class="avatar" alt="">
-                            <div>
-                                <h4>Emily Chen</h4>
-                                <span>Child Psychology</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Duplicate Slides -->
-                <div class="swiper-slide h-auto">
-                    <article class="testimonial-card h-100 tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
-                        <div class="stars">★★★★★</div>
-                        <p>"Amazing support and guidance throughout the process."</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/author.webp" class="avatar" alt="">
-                            <div>
-                                <h4>Michael Lee</h4>
-                                <span>Therapy Client</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
             </div>
-
-            <!-- <div class="swiper-pagination mt-4"></div> -->
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Team Section -->
-        <section class="py-5 section-soft">
+        <section class="py-5 section-soft overflow-hidden">
             <div class="container-xl">
                 <div class="section-heading text-center" data-aos="fade-up">
                     <span class="section-label">Our Team</span>
@@ -333,7 +390,8 @@
                     <div class="col-md-6 col-lg-3" data-aos="fade-up">
                         <article class="team-card tilt-card" data-tilt data-tilt-max="10">
                             <div class="team-photo-wrap">
-                                <div class="team-photo image-bg" style="background-image: url('./assets/images/team-1.webp');"></div>
+                                <div class="team-photo image-bg"
+                                    style="background-image: url('./assets/images/team-1.webp');"></div>
                                 <div class="team-socials">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -348,7 +406,8 @@
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                         <article class="team-card tilt-card" data-tilt data-tilt-max="10">
                             <div class="team-photo-wrap">
-                                <div class="team-photo image-bg" style="background-image: url('./assets/images/team-2.webp');"></div>
+                                <div class="team-photo image-bg"
+                                    style="background-image: url('./assets/images/team-2.webp');"></div>
                                 <div class="team-socials">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -363,7 +422,8 @@
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                         <article class="team-card tilt-card" data-tilt data-tilt-max="10">
                             <div class="team-photo-wrap">
-                                <div class="team-photo image-bg" style="background-image: url('./assets/images/team-3.webp');"></div>
+                                <div class="team-photo image-bg"
+                                    style="background-image: url('./assets/images/team-3.webp');"></div>
                                 <div class="team-socials">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -378,7 +438,8 @@
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                         <article class="team-card tilt-card" data-tilt data-tilt-max="10">
                             <div class="team-photo-wrap">
-                                <div class="team-photo image-bg" style="background-image: url('./assets/images/team-4.webp');"></div>
+                                <div class="team-photo image-bg"
+                                    style="background-image: url('./assets/images/team-4.webp');"></div>
                                 <div class="team-socials">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -395,62 +456,83 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="py-5">
+        <section class="py-5 overflow-hidden">
             <div class="container-xl">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-5" data-aos="fade-right">
                         <span class="section-label">FAQ</span>
                         <h2>Frequently Asked Questions</h2>
-                        <p class="lead-copy">Find answers to common questions about our therapy process, appointments, and what to expect.</p>
+                        <p class="lead-copy">Find answers to common questions about our therapy process, appointments,
+                            and what to expect.</p>
                         <a href="contact.html" class="btn thm-btn-primary mt-3">Ask a Question</a>
                     </div>
                     <div class="col-lg-7" data-aos="fade-left">
                         <div class="accordion custom-accordion" id="faqAccordion">
                             <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button fw-bold py-4 px-4 bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button fw-bold py-4 px-4 bg-white text-dark" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         What should I expect in my first session?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body px-4 pb-4 pt-0 text-muted bg-white border-top-0">
-                                        Your first session is primarily an assessment. The therapist will ask about your current struggles, history, and goals for therapy. It's also an opportunity for you to see if the therapist is a good fit for you.
+                                        Your first session is primarily an assessment. The therapist will ask about your
+                                        current struggles, history, and goals for therapy. It's also an opportunity for
+                                        you to see if the therapist is a good fit for you.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
                                         How long does therapy usually last?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body px-4 pb-4 pt-0 text-muted bg-white border-top-0">
-                                        The length of therapy varies for each individual depending on their specific needs and goals. Some clients see improvement in a few weeks, while others may benefit from long-term support over several months or years.
+                                        The length of therapy varies for each individual depending on their specific
+                                        needs and goals. Some clients see improvement in a few weeks, while others may
+                                        benefit from long-term support over several months or years.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                         Do you offer online counseling?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body px-4 pb-4 pt-0 text-muted bg-white border-top-0">
-                                        Yes, we offer secure, confidential telehealth sessions. You can receive the same high-quality care from the comfort and privacy of your own home via our secure video platform.
+                                        Yes, we offer secure, confidential telehealth sessions. You can receive the same
+                                        high-quality care from the comfort and privacy of your own home via our secure
+                                        video platform.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-0 shadow-sm rounded-4 overflow-hidden">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white text-dark"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         Is my information kept confidential?
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body px-4 pb-4 pt-0 text-muted bg-white border-top-0">
-                                        Absolutely. Confidentiality is the cornerstone of therapy. Everything discussed in your sessions is kept strictly confidential, in accordance with professional ethics and legal regulations.
+                                        Absolutely. Confidentiality is the cornerstone of therapy. Everything discussed
+                                        in your sessions is kept strictly confidential, in accordance with professional
+                                        ethics and legal regulations.
                                     </div>
                                 </div>
                             </div>
@@ -461,9 +543,10 @@
         </section>
 
         <!-- Blog Section -->
-        <section class="py-5 section-soft">
+        <section class="py-5 section-soft overflow-hidden">
             <div class="container-xl">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5" data-aos="fade-up">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5"
+                    data-aos="fade-up">
                     <div>
                         <span class="section-label">Our Blog</span>
                         <h2 class="mb-0">Insights & Resources</h2>
@@ -474,47 +557,68 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-1.webp'); height: 220px;"></div>
+                        <article class="blog-card"
+                            style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/blog-1.webp'); height: 220px;"></div>
                             <div class="p-4">
                                 <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
                                     <span><i class="far fa-calendar-alt me-1"></i> Oct 12, 2026</span>
                                     <span>&bull;</span>
                                     <span>Mental Health</span>
                                 </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">5 Simple Practices for Daily Mindfulness</a></h3>
-                                <p class="text-muted mb-4">Learn how to incorporate mindfulness into your everyday routine to reduce stress and improve focus.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none"
+                                        style="color: inherit; transition: color 0.3s;">5 Simple Practices for Daily
+                                        Mindfulness</a></h3>
+                                <p class="text-muted mb-4">Learn how to incorporate mindfulness into your everyday
+                                    routine to reduce stress and improve focus.</p>
+                                <a href="#"
+                                    class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read
+                                    Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
                             </div>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-2.webp'); height: 220px;"></div>
+                        <article class="blog-card"
+                            style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/blog-2.webp'); height: 220px;"></div>
                             <div class="p-4">
                                 <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
                                     <span><i class="far fa-calendar-alt me-1"></i> Oct 05, 2026</span>
                                     <span>&bull;</span>
                                     <span>Anxiety</span>
                                 </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">Understanding and Managing Panic Attacks</a></h3>
-                                <p class="text-muted mb-4">A comprehensive guide on recognizing panic attack triggers and effective strategies to calm your mind.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none"
+                                        style="color: inherit; transition: color 0.3s;">Understanding and Managing Panic
+                                        Attacks</a></h3>
+                                <p class="text-muted mb-4">A comprehensive guide on recognizing panic attack triggers
+                                    and effective strategies to calm your mind.</p>
+                                <a href="#"
+                                    class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read
+                                    Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
                             </div>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <article class="blog-card" style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                            <div class="card-img image-bg" style="background-image: url('./assets/images/blog-3.webp'); height: 220px;"></div>
+                        <article class="blog-card"
+                            style="background: var(--white); border-radius: 1.25rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="card-img image-bg"
+                                style="background-image: url('./assets/images/blog-3.webp'); height: 220px;"></div>
                             <div class="p-4">
                                 <div class="d-flex gap-2 mb-3 text-muted small fw-bold text-uppercase">
                                     <span><i class="far fa-calendar-alt me-1"></i> Sep 28, 2026</span>
                                     <span>&bull;</span>
                                     <span>Relationships</span>
                                 </div>
-                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none" style="color: inherit; transition: color 0.3s;">How to Communicate Effectively in Marriage</a></h3>
-                                <p class="text-muted mb-4">Discover the key components of healthy communication that strengthen bonds and resolve conflicts.</p>
-                                <a href="#" class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
+                                <h3 class="fs-5 fw-bold mb-3"><a href="#" class="text-decoration-none"
+                                        style="color: inherit; transition: color 0.3s;">How to Communicate Effectively
+                                        in Marriage</a></h3>
+                                <p class="text-muted mb-4">Discover the key components of healthy communication that
+                                    strengthen bonds and resolve conflicts.</p>
+                                <a href="#"
+                                    class="text-primary fw-bold text-decoration-none d-inline-flex align-items-center gap-1">Read
+                                    Article <span class="material-symbols-outlined fs-6">arrow_forward</span></a>
                             </div>
                         </article>
                     </div>

@@ -1047,6 +1047,7 @@ h2 {
     transform: translateY(0);
 }
 
+
 @media (max-width: 991.98px) {
     .navbar-stackly {
         min-height: auto;
@@ -1055,6 +1056,8 @@ h2 {
 
     .navbar-collapse {
         padding-top: 1rem;
+        height: calc(100vh - 70px);
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
     .navbar-stackly .nav-link.active {
