@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Queries | Stackly Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: var(--surface); padding: 1.5rem; font-family: "Source Sans 3", sans-serif; }
+        .dash-card { background: #fff; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid var(--outline-variant); }
+        .action-btn { width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; }
+        .ticket-item { border-left: 3px solid transparent; transition: all 0.2s; }
+        .ticket-item:hover { background-color: rgba(0,0,0,0.01); border-left-color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <h3 class="fw-bold mb-4" style="color: var(--ink);">Support & Queries</h3>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="dash-card h-100">
+                    <h5 class="fw-bold mb-3">Ticket Status</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
+                            Open Tickets
+                            <span class="badge bg-danger rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
+                            In Progress
+                            <span class="badge bg-warning text-dark rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
+                            Resolved
+                            <span class="badge bg-success rounded-pill">148</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-8">
+                <div class="dash-card">
+                    <h5 class="fw-bold mb-3">Recent Queries</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item ticket-item py-3 px-2">
+                            <div class="d-flex w-100 justify-content-between mb-1">
+                                <h6 class="mb-0 fw-bold">Login Issue</h6>
+                                <small class="text-muted">10 mins ago</small>
+                            </div>
+                            <p class="mb-1 text-muted small">From: John Doe (Patient)</p>
+                            <span class="badge bg-danger">Open</span>
+                            <span class="badge bg-light text-dark ms-1">High Priority</span>
+                            <button class="btn btn-sm btn-outline-primary float-end">Reply</button>
+                        </div>
+                        <div class="list-group-item ticket-item py-3 px-2">
+                            <div class="d-flex w-100 justify-content-between mb-1">
+                                <h6 class="mb-0 fw-bold">Schedule Update Request</h6>
+                                <small class="text-muted">2 hours ago</small>
+                            </div>
+                            <p class="mb-1 text-muted small">From: Dr. Robert Smith (Therapist)</p>
+                            <span class="badge bg-warning text-dark">In Progress</span>
+                            <button class="btn btn-sm btn-outline-primary float-end">Reply</button>
+                        </div>
+                        <div class="list-group-item ticket-item py-3 px-2">
+                            <div class="d-flex w-100 justify-content-between mb-1">
+                                <h6 class="mb-0 fw-bold">Billing Question</h6>
+                                <small class="text-muted">1 day ago</small>
+                            </div>
+                            <p class="mb-1 text-muted small">From: Sarah Connor (Patient)</p>
+                            <span class="badge bg-success">Resolved</span>
+                            <button class="btn btn-sm btn-outline-secondary float-end">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

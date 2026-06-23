@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Settings | Stackly Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: var(--surface); padding: 1.5rem; font-family: "Source Sans 3", sans-serif; }
+        .dash-card { background: #fff; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid var(--outline-variant); }
+        .nav-pills .nav-link { color: var(--ink); border-radius: 8px; }
+        .nav-pills .nav-link.active { background-color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <h3 class="fw-bold mb-4" style="color: var(--ink);">System Settings</h3>
+        
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="dash-card">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active text-start mb-2" data-bs-toggle="pill" data-bs-target="#general-settings" type="button"><i class="fas fa-sliders-h me-2"></i>General</button>
+                        <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#email-settings" type="button"><i class="fas fa-envelope me-2"></i>Email Configurations</button>
+                        <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#payment-settings" type="button"><i class="fas fa-credit-card me-2"></i>Payment Gateway</button>
+                        <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#security-settings" type="button"><i class="fas fa-shield-alt me-2"></i>Security</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <div class="dash-card">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="general-settings">
+                            <h5 class="fw-bold mb-4">General Settings</h5>
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Clinic Name</label>
+                                        <input type="text" class="form-control" value="Stackly Clinic">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Contact Email</label>
+                                        <input type="email" class="form-control" value="support@stackly.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Clinic Address</label>
+                                    <textarea class="form-control" rows="3">123 Health Ave, Wellness District</textarea>
+                                </div>
+                                <div class="mb-3 form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="maintenanceMode">
+                                    <label class="form-check-label" for="maintenanceMode">Enable Maintenance Mode</label>
+                                </div>
+                                <button type="submit" class="btn text-white" style="background: var(--primary);">Save Changes</button>
+                            </form>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="email-settings">
+                            <h5 class="fw-bold mb-4">Email Configurations</h5>
+                            <p class="text-muted">SMTP settings for system notifications.</p>
+                            <!-- More form fields here -->
+                        </div>
+                        
+                        <div class="tab-pane fade" id="payment-settings">
+                            <h5 class="fw-bold mb-4">Payment Gateway</h5>
+                            <p class="text-muted">Configure Stripe or PayPal API keys.</p>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="security-settings">
+                            <h5 class="fw-bold mb-4">Security Settings</h5>
+                            <p class="text-muted">Manage 2FA policies and session timeouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
