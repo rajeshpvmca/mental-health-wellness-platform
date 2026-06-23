@@ -611,7 +611,8 @@ h2 {
 }
 
 .service-card a,
-.blog-card a {
+.blog-card a,
+.modality-card a {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -619,6 +620,31 @@ h2 {
     color: var(--primary);
     font-family: "Manrope", Arial, sans-serif;
     font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+.service-card a span,
+.service-card a i,
+.blog-card a span,
+.blog-card a i,
+.modality-card a span,
+.modality-card a i {
+    transition: transform 0.3s ease;
+}
+
+.service-card a:hover,
+.blog-card a:hover,
+.modality-card a:hover {
+    color: var(--primary-dark);
+}
+
+.service-card a:hover span,
+.service-card a:hover i,
+.blog-card a:hover span,
+.blog-card a:hover i,
+.modality-card a:hover span,
+.modality-card a:hover i {
+    transform: translateX(5px);
 }
 
 .appointment-band,
