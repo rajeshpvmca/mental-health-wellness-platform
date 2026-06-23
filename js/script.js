@@ -29,6 +29,36 @@ function initHeroSwiper() {
     });
 }
 
+ new Swiper(".testimonial-slider", {
+    loop: true,
+    speed: 5000,
+    spaceBetween: 30,
+    grabCursor: true,
+
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1200: {
+            slidesPerView: 3
+        }
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    }
+});
+
 function setActiveNav(root) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
 

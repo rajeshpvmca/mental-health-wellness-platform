@@ -398,9 +398,8 @@ h2 {
 
 .feature-card,
 .service-card,
-.blog-card,
-.testimonial-card {
-    /* height: 100%; */
+.blog-card {
+    height: 100%;
     background: var(--white);
     border: 1px solid var(--line);
     box-shadow: 0 8px 22px rgba(11, 28, 48, 0.06);
@@ -658,8 +657,7 @@ h2 {
     border-radius: 1rem;
 }
 
-.doctor-quote span,
-.testimonial-card span {
+.doctor-quote span{
     display: block;
     color: rgba(255, 255, 255, 0.75);
     font-size: 0.9rem;
@@ -767,20 +765,46 @@ h2 {
     font-weight: 700;
 }
 
-.testimonial-card {
-    margin-top: 1.75rem;
-    padding: 2.25rem;
-    border-radius: 1.25rem;
+/* testimonials */
+.testimonial-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    height:100%;
+    transition:.4s;
 }
 
-.testimonial-card > p {
-    color: var(--ink);
-    font-size: 1.12rem;
-    font-style: italic;
+.testimonial-card:hover{
+    transform:translateY(-8px);
 }
 
-.testimonial-card span {
-    color: var(--muted);
+.testimonial-card p{
+    color:#6c757d;
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.stars{
+    color:#ffc107;
+    font-size:18px;
+    letter-spacing:3px;
+}
+
+.avatar{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+}
+
+.swiper-pagination-bullet-active{
+    background:#15b392;
 }
 
 .stars {
