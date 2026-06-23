@@ -27,6 +27,10 @@ body {
     color: var(--primary) !important;
 }
 
+.bg-primary{
+    background-color: var(--primary-light) !important;
+}
+
 #header-placeholder,
 .site-header {
     position: sticky;
