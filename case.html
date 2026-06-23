@@ -7,24 +7,85 @@
     <title>Success Stories & Cases | Stackly Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        .tilt-card { transform-style: preserve-3d; }
-        
+        .tilt-card {
+            transform-style: preserve-3d;
+        }
+
         /* 3D Flip Card Styles */
-        .flip-card { background-color: transparent; perspective: 1000px; height: 500px; border-radius: 24px; cursor: pointer; }
-        .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
-        .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
-        .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; }
-        
-        .flip-card-front { background-color: white; border: 1px solid var(--outline-variant); }
-        .flip-card-back { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; transform: rotateY(180deg); padding: 3rem 2rem; text-align: left; }
-        
-        .front-img { height: 250px; background-size: cover; background-position: center; border-bottom: 4px solid var(--primary); }
-        .patient-badge { background: rgba(0, 107, 86, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; display: inline-block; margin-bottom: 1rem; }
+        .flip-card {
+            background-color: transparent;
+            perspective: 1000px;
+            height: 500px;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flip-card-front {
+            background-color: white;
+            border: 1px solid var(--outline-variant);
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            transform: rotateY(180deg);
+            padding: 3rem 2rem;
+            text-align: left;
+        }
+
+        .front-img {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .patient-badge {
+            background: rgba(0, 107, 86, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -45,7 +106,7 @@
         <div class="loader-content">
             <div class="loader-wrapper">
                 <div class="loader-ring"></div>
-                 <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
+                <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
             </div>
             <div class="loader-text" data-aos="fade-up">
                 Loading ...
@@ -55,7 +116,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="header-placeholder"></div>
 
     <main class="overflow-hidden bg-light main-content">
@@ -64,11 +125,15 @@
             <div class="container-xl position-relative z-1" data-aos="fade-up">
                 <span class="eyebrow" data-tilt data-tilt-scale="1.1">Case Studies</span>
                 <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">Journeys of Resilience.</h1>
-                <p class="lead" style="max-width: 750px; margin: 0 auto;">Read real, anonymized stories of people who came to us feeling overwhelmed and found their way back to themselves using our structured therapy modalities.</p>
+                <p class="lead" style="max-width: 750px; margin: 0 auto;">Read real, anonymized stories of people who
+                    came to us feeling overwhelmed and found their way back to themselves using our structured therapy
+                    modalities.</p>
             </div>
-            
+
             <div class="floating-icons">
-                <i class="fas fa-sun hero-shape" style="top: 20%; left: 10%; font-size: 3rem; color: var(--primary-light);" data-tilt data-tilt-scale="1.5"></i>
+                <i class="fas fa-sun hero-shape"
+                    style="top: 20%; left: 10%; font-size: 3rem; color: var(--primary-light);" data-tilt
+                    data-tilt-scale="1.5"></i>
             </div>
         </section>
 
@@ -76,26 +141,34 @@
         <section class="section-space py-5">
             <div class="container-xl">
                 <div class="row g-5">
-                    
+
                     <!-- Case Study 1 -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="front-img" style="background-image: url('./assets/images/case-1.webp');"></div>
+                                    <div class="front-img"
+                                        style="background-image: url('./assets/images/case-1.webp');"></div>
                                     <div class="p-4 d-flex flex-column justify-content-center flex-grow-1">
-                                        <div class="text-center"><span class="patient-badge">"Mark", 34 • Severe Burnout</span></div>
+                                        <div class="text-center"><span class="patient-badge">"Mark", 34 • Severe
+                                                Burnout</span></div>
                                         <h4 class="fw-bold mb-3">Rebuilding Career Boundaries</h4>
-                                        <p class="text-muted small">Mark was experiencing panic attacks before work and chronic insomnia. He felt completely trapped by his corporate job.</p>
-                                        <div class="mt-auto text-primary fw-bold"><i class="fas fa-undo-alt me-2"></i> Hover to see the outcome</div>
+                                        <p class="text-muted small">Mark was experiencing panic attacks before work and
+                                            chronic insomnia. He felt completely trapped by his corporate job.</p>
+                                        <div class="mt-auto text-primary fw-bold"><i class="fas fa-undo-alt me-2"></i>
+                                            Hover to see the outcome</div>
                                     </div>
                                 </div>
                                 <div class="flip-card-back">
-                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-white border-opacity-25">The Outcome</h4>
+                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-white border-opacity-25">The
+                                        Outcome</h4>
                                     <h6 class="text-white-50 text-uppercase small fw-bold">Modality Used</h6>
                                     <p class="mb-4">12 weeks of Cognitive Behavioral Therapy (CBT)</p>
                                     <h6 class="text-white-50 text-uppercase small fw-bold">Result</h6>
-                                    <p>Mark learned to identify his "all-or-nothing" thinking patterns. By week 8, he successfully negotiated a boundary with his manager regarding after-hours emails. His panic attacks ceased entirely after 3 months.</p>
+                                    <p>Mark learned to identify his "all-or-nothing" thinking patterns. By week 8, he
+                                        successfully negotiated a boundary with his manager regarding after-hours
+                                        emails. His panic attacks ceased entirely after 3 months.</p>
                                 </div>
                             </div>
                         </div>
@@ -103,23 +176,33 @@
 
                     <!-- Case Study 2 -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="front-img" style="background-image: url('./assets/images/case-2.webp');"></div>
+                                    <div class="front-img"
+                                        style="background-image: url('./assets/images/case-2.webp');"></div>
                                     <div class="p-4 d-flex flex-column justify-content-center flex-grow-1">
-                                        <div class="text-center"><span class="patient-badge" style="background: rgba(13, 202, 240, 0.1); color: #0dcaf0;">"Sarah", 28 • Social Anxiety</span></div>
+                                        <div class="text-center"><span class="patient-badge"
+                                                style="background: rgba(13, 202, 240, 0.1); color: #0dcaf0;">"Sarah", 28
+                                                • Social Anxiety</span></div>
                                         <h4 class="fw-bold mb-3">Finding Her Voice Again</h4>
-                                        <p class="text-muted small">Sarah avoided all social gatherings and struggled to speak in meetings due to overwhelming fear of judgment.</p>
-                                        <div class="mt-auto fw-bold" style="color: #0dcaf0;"><i class="fas fa-undo-alt me-2"></i> Hover to see the outcome</div>
+                                        <p class="text-muted small">Sarah avoided all social gatherings and struggled to
+                                            speak in meetings due to overwhelming fear of judgment.</p>
+                                        <div class="mt-auto fw-bold" style="color: #0dcaf0;"><i
+                                                class="fas fa-undo-alt me-2"></i> Hover to see the outcome</div>
                                     </div>
                                 </div>
-                                <div class="flip-card-back" style="background: linear-gradient(135deg, #0dcaf0, #0a9cb8);">
-                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-white border-opacity-25">The Outcome</h4>
+                                <div class="flip-card-back"
+                                    style="background: linear-gradient(135deg, #0dcaf0, #0a9cb8);">
+                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-white border-opacity-25">The
+                                        Outcome</h4>
                                     <h6 class="text-white-50 text-uppercase small fw-bold text-dark">Modality Used</h6>
                                     <p class="mb-4">Exposure Therapy & Mindfulness</p>
                                     <h6 class="text-white-50 text-uppercase small fw-bold text-dark">Result</h6>
-                                    <p>Through gradual, safe exposure exercises, Sarah slowly desensitized her fear response. Within 6 months, she volunteered to lead a team presentation and successfully joined a local hiking group.</p>
+                                    <p>Through gradual, safe exposure exercises, Sarah slowly desensitized her fear
+                                        response. Within 6 months, she volunteered to lead a team presentation and
+                                        successfully joined a local hiking group.</p>
                                 </div>
                             </div>
                         </div>
@@ -127,23 +210,34 @@
 
                     <!-- Case Study 3 -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="flip-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="front-img" style="background-image: url('./assets/images/case-3.webp');"></div>
+                                    <div class="front-img"
+                                        style="background-image: url('./assets/images/case-3.webp');"></div>
                                     <div class="p-4 d-flex flex-column justify-content-center flex-grow-1">
-                                        <div class="text-center"><span class="patient-badge" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;">"The Millers" • Family Conflict</span></div>
+                                        <div class="text-center"><span class="patient-badge"
+                                                style="background: rgba(255, 193, 7, 0.1); color: #ffc107;">"The
+                                                Millers" • Family Conflict</span></div>
                                         <h4 class="fw-bold mb-3">Healing Post-Divorce Dynamics</h4>
-                                        <p class="text-muted small">A newly divorced couple struggling to co-parent their 10-year-old son, resulting in high-conflict exchanges and behavioral issues in the child.</p>
-                                        <div class="mt-auto text-warning fw-bold"><i class="fas fa-undo-alt me-2"></i> Hover to see the outcome</div>
+                                        <p class="text-muted small">A newly divorced couple struggling to co-parent
+                                            their 10-year-old son, resulting in high-conflict exchanges and behavioral
+                                            issues in the child.</p>
+                                        <div class="mt-auto text-warning fw-bold"><i class="fas fa-undo-alt me-2"></i>
+                                            Hover to see the outcome</div>
                                     </div>
                                 </div>
-                                <div class="flip-card-back" style="background: linear-gradient(135deg, #ffc107, #d39e00);">
-                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-dark border-opacity-25 text-dark">The Outcome</h4>
+                                <div class="flip-card-back"
+                                    style="background: linear-gradient(135deg, #ffc107, #d39e00);">
+                                    <h4 class="fw-bold mb-4 border-bottom pb-2 border-dark border-opacity-25 text-dark">
+                                        The Outcome</h4>
                                     <h6 class="text-dark text-uppercase small fw-bold opacity-75">Modality Used</h6>
                                     <p class="mb-4 text-dark">Family Systems Therapy</p>
                                     <h6 class="text-dark text-uppercase small fw-bold opacity-75">Result</h6>
-                                    <p class="text-dark">The parents learned non-violent communication techniques to de-escalate arguments. As the parental hostility dropped, their son's acting out at school completely subsided within 4 months.</p>
+                                    <p class="text-dark">The parents learned non-violent communication techniques to
+                                        de-escalate arguments. As the parental hostility dropped, their son's acting out
+                                        at school completely subsided within 4 months.</p>
                                 </div>
                             </div>
                         </div>
@@ -156,10 +250,13 @@
         <!-- CTA -->
         <section class="section-space py-5">
             <div class="container-xl text-center" data-aos="fade-in">
-                <div class="bg-white p-5 rounded-4 shadow-sm border tilt-card" data-tilt data-tilt-max="2">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
                     <h2 class="fw-bold mb-4">Your story could be next.</h2>
-                    <p class="lead text-muted mb-4 mx-auto" style="max-width: 600px;">Change is possible with the right tools and support. Reach out today to start your journey.</p>
-                    <a href="contact.html" class="thm-btn-primary py-3 px-5 fw-bold fs-5 rounded-pill tilt-card-inner">Request an Appointment</a>
+                    <p class="lead text-muted mb-4 mx-auto" style="max-width: 600px;">Change is possible with the right
+                        tools and support. Reach out today to start your journey.</p>
+                    <a href="contact.html"
+                        class="thm-btn-primary py-3 px-5 fw-bold fs-5 rounded-pill tilt-card-inner">Request an
+                        Appointment</a>
                 </div>
             </div>
         </section>
@@ -171,4 +268,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

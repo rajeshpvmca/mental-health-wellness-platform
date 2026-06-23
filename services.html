@@ -7,24 +7,104 @@
     <title>Services | Stackly Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        .tilt-card { transform-style: preserve-3d; }
-        .tilt-card-inner { transform: translateZ(30px); }
-        
-        .modality-card { background: white; border-radius: 20px; padding: 2.5rem; height: 100%; border: 1px solid var(--outline-variant); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: 0.3s; }
-        .modality-icon { width: 70px; height: 70px; border-radius: 20px; background: rgba(0, 107, 86, 0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; }
-        
-        .step-circle { width: 80px; height: 80px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 1.5rem auto; box-shadow: 0 10px 25px rgba(0, 107, 86, 0.3); border: 4px solid rgba(255,255,255,0.5); }
-        .step-connector { position: absolute; top: 40px; left: 50%; width: 100%; height: 2px; background: dashed 2px var(--primary-light); z-index: -1; }
-        @media (max-width: 991px) { .step-connector { display: none; } }
-        
-        .pricing-card { background: white; border-radius: 20px; padding: 3rem 2rem; text-align: center; border: 1px solid var(--outline-variant); }
-        .pricing-card.popular { border: 2px solid var(--primary); transform: scale(1.05); box-shadow: 0 20px 40px rgba(0,107,86,0.1); position: relative; }
-        .popular-badge { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: var(--primary); color: white; padding: 5px 20px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; }
+        .tilt-card {
+            transform-style: preserve-3d;
+        }
+
+        .tilt-card-inner {
+            transform: translateZ(30px);
+        }
+
+        .modality-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            height: 100%;
+            border: 1px solid var(--outline-variant);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: 0.3s;
+        }
+
+        .modality-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            background: rgba(0, 107, 86, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 10px 25px rgba(0, 107, 86, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .step-connector {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background: dashed 2px var(--primary-light);
+            z-index: -1;
+        }
+
+        @media (max-width: 991px) {
+            .step-connector {
+                display: none;
+            }
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid var(--outline-variant);
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 107, 86, 0.1);
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--primary);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 
@@ -45,7 +125,7 @@
         <div class="loader-content">
             <div class="loader-wrapper">
                 <div class="loader-ring"></div>
-                 <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
+                <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
             </div>
             <div class="loader-text" data-aos="fade-up">
                 Loading ...
@@ -62,13 +142,19 @@
         <section class="page-hero position-relative">
             <div class="container-xl position-relative z-1" data-aos="fade-up">
                 <span class="eyebrow" data-tilt data-tilt-scale="1.1">Our Services</span>
-                <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">Therapy tailored to your<br>unique experiences.</h1>
-                <p class="lead" style="max-width: 700px; margin: 0 auto;">We don't believe in a one-size-fits-all approach. Explore our specialized modalities designed to support different mental health needs.</p>
+                <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">Therapy tailored to your<br>unique
+                    experiences.</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">We don't believe in a one-size-fits-all
+                    approach. Explore our specialized modalities designed to support different mental health needs.</p>
             </div>
-            
+
             <div class="floating-icons">
-                <i class="fas fa-brain hero-shape" style="top: 20%; left: 15%; font-size: 3rem; color: var(--primary-light);" data-tilt data-tilt-scale="1.5"></i>
-                <i class="fas fa-heart hero-shape" style="top: 60%; right: 20%; font-size: 3.5rem; color: var(--primary);" data-tilt data-tilt-scale="1.5"></i>
+                <i class="fas fa-brain hero-shape"
+                    style="top: 20%; left: 15%; font-size: 3rem; color: var(--primary-light);" data-tilt
+                    data-tilt-scale="1.5"></i>
+                <i class="fas fa-heart hero-shape"
+                    style="top: 60%; right: 20%; font-size: 3.5rem; color: var(--primary);" data-tilt
+                    data-tilt-scale="1.5"></i>
             </div>
         </section>
 
@@ -79,65 +165,89 @@
                     <span class="section-label">Core Modalities</span>
                     <h2>Evidence-based approaches</h2>
                 </div>
-                
+
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
                                 <div class="modality-icon"><i class="fas fa-sync"></i></div>
                                 <h4 class="fw-bold mb-3">Cognitive Behavioral Therapy (CBT)</h4>
-                                <p class="text-muted mb-4">Focuses on identifying and changing negative thought patterns and behaviors. Highly effective for anxiety, depression, and stress management.</p>
-                                <a href="contact.html" class="fw-bold text-primary text-decoration-none">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Focuses on identifying and changing negative thought patterns
+                                    and behaviors. Highly effective for anxiety, depression, and stress management.</p>
+                                <a href="contact.html" class="fw-bold text-primary text-decoration-none">Book Session <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
-                                <div class="modality-icon" style="background: rgba(13, 202, 240, 0.1); color: #0dcaf0;"><i class="fas fa-balance-scale"></i></div>
+                                <div class="modality-icon" style="background: rgba(13, 202, 240, 0.1); color: #0dcaf0;">
+                                    <i class="fas fa-balance-scale"></i></div>
                                 <h4 class="fw-bold mb-3">Dialectical Behavior Therapy (DBT)</h4>
-                                <p class="text-muted mb-4">Provides skills to manage painful emotions and decrease conflict in relationships. Ideal for emotional dysregulation and borderline personality disorder.</p>
-                                <a href="contact.html" class="fw-bold text-info text-decoration-none">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Provides skills to manage painful emotions and decrease
+                                    conflict in relationships. Ideal for emotional dysregulation and borderline
+                                    personality disorder.</p>
+                                <a href="contact.html" class="fw-bold text-info text-decoration-none">Book Session <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
-                                <div class="modality-icon" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;"><i class="fas fa-eye"></i></div>
+                                <div class="modality-icon" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;">
+                                    <i class="fas fa-eye"></i></div>
                                 <h4 class="fw-bold mb-3">EMDR Therapy</h4>
-                                <p class="text-muted mb-4">Eye Movement Desensitization and Reprocessing helps process and heal from severe trauma, PTSD, and deeply rooted distressing memories.</p>
-                                <a href="contact.html" class="fw-bold text-warning text-decoration-none">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Eye Movement Desensitization and Reprocessing helps process
+                                    and heal from severe trauma, PTSD, and deeply rooted distressing memories.</p>
+                                <a href="contact.html" class="fw-bold text-warning text-decoration-none">Book Session <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
-                                <div class="modality-icon" style="background: rgba(111, 66, 193, 0.1); color: #6f42c1;"><i class="fas fa-users"></i></div>
+                                <div class="modality-icon" style="background: rgba(111, 66, 193, 0.1); color: #6f42c1;">
+                                    <i class="fas fa-users"></i></div>
                                 <h4 class="fw-bold mb-3">Couples & Family Therapy</h4>
-                                <p class="text-muted mb-4">Addresses communication breakdowns, conflict resolution, and structural family dynamics to foster healthier relationships.</p>
-                                <a href="contact.html" class="fw-bold text-decoration-none" style="color: #6f42c1;">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Addresses communication breakdowns, conflict resolution, and
+                                    structural family dynamics to foster healthier relationships.</p>
+                                <a href="contact.html" class="fw-bold text-decoration-none" style="color: #6f42c1;">Book
+                                    Session <i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
-                                <div class="modality-icon" style="background: rgba(32, 201, 151, 0.1); color: #20c997;"><i class="fas fa-child"></i></div>
+                                <div class="modality-icon" style="background: rgba(32, 201, 151, 0.1); color: #20c997;">
+                                    <i class="fas fa-child"></i></div>
                                 <h4 class="fw-bold mb-3">Child & Adolescent Therapy</h4>
-                                <p class="text-muted mb-4">Uses play therapy and structured interventions to help younger patients navigate behavioral issues, ADHD, and school anxiety.</p>
-                                <a href="contact.html" class="fw-bold text-decoration-none" style="color: #20c997;">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Uses play therapy and structured interventions to help
+                                    younger patients navigate behavioral issues, ADHD, and school anxiety.</p>
+                                <a href="contact.html" class="fw-bold text-decoration-none" style="color: #20c997;">Book
+                                    Session <i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="modality-card tilt-card" data-tilt data-tilt-max="10" data-tilt-glare
+                            data-tilt-max-glare="0.2">
                             <div class="tilt-card-inner">
-                                <div class="modality-icon" style="background: rgba(220, 53, 69, 0.1); color: #dc3545;"><i class="fas fa-laptop-medical"></i></div>
+                                <div class="modality-icon" style="background: rgba(220, 53, 69, 0.1); color: #dc3545;">
+                                    <i class="fas fa-laptop-medical"></i></div>
                                 <h4 class="fw-bold mb-3">Telehealth / Virtual Care</h4>
-                                <p class="text-muted mb-4">Receive the same high-quality care from the comfort of your home through our secure, HIPAA-compliant video platform.</p>
-                                <a href="contact.html" class="fw-bold text-danger text-decoration-none">Book Session <i class="fas fa-arrow-right ms-1"></i></a>
+                                <p class="text-muted mb-4">Receive the same high-quality care from the comfort of your
+                                    home through our secure, HIPAA-compliant video platform.</p>
+                                <a href="contact.html" class="fw-bold text-danger text-decoration-none">Book Session <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -151,26 +261,30 @@
                 <div class="section-heading text-center" data-aos="fade-up">
                     <span class="section-label">Process</span>
                     <h2>What to expect</h2>
-                    <p class="text-muted">Starting therapy can feel intimidating. Here is exactly what happens when you reach out.</p>
+                    <p class="text-muted">Starting therapy can feel intimidating. Here is exactly what happens when you
+                        reach out.</p>
                 </div>
-                
+
                 <div class="row position-relative text-center g-4 mt-4">
                     <div class="col-lg-4 position-relative" data-aos="fade-right" data-aos-delay="0">
                         <div class="step-connector"></div>
                         <div class="step-circle tilt-card" data-tilt>1</div>
                         <h4 class="fw-bold mb-3">Initial Consultation</h4>
-                        <p class="text-muted px-3">A free 15-minute call to discuss your needs and ensure we match you with the right therapist for your specific challenges.</p>
+                        <p class="text-muted px-3">A free 15-minute call to discuss your needs and ensure we match you
+                            with the right therapist for your specific challenges.</p>
                     </div>
                     <div class="col-lg-4 position-relative" data-aos="fade-up" data-aos-delay="200">
                         <div class="step-connector"></div>
                         <div class="step-circle tilt-card" data-tilt>2</div>
                         <h4 class="fw-bold mb-3">First Assessment</h4>
-                        <p class="text-muted px-3">Your first full session is about gathering your history, understanding your current symptoms, and establishing a safe space.</p>
+                        <p class="text-muted px-3">Your first full session is about gathering your history,
+                            understanding your current symptoms, and establishing a safe space.</p>
                     </div>
                     <div class="col-lg-4 position-relative" data-aos="fade-left" data-aos-delay="400">
                         <div class="step-circle tilt-card" data-tilt>3</div>
                         <h4 class="fw-bold mb-3">Personalized Care Plan</h4>
-                        <p class="text-muted px-3">We collaboratively build a treatment plan with clear goals, actionable coping strategies, and a timeline for your progress.</p>
+                        <p class="text-muted px-3">We collaboratively build a treatment plan with clear goals,
+                            actionable coping strategies, and a timeline for your progress.</p>
                     </div>
                 </div>
             </div>
@@ -184,7 +298,7 @@
                     <h2>Transparent Pricing</h2>
                     <p class="text-muted">We believe in clear costs. We also accept most major insurance plans.</p>
                 </div>
-                
+
                 <div class="row justify-content-center align-items-center g-4 mt-2">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
                         <div class="pricing-card tilt-card" data-tilt data-tilt-max="5">
@@ -194,34 +308,46 @@
                             </div>
                             <ul class="list-unstyled text-start text-muted mb-4 tilt-card-inner">
                                 <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> One-on-one therapy</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> In-person or virtual</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Goal setting & tracking</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> In-person or virtual
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Goal setting & tracking
+                                </li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-primary rounded-pill w-100 fw-bold py-2 tilt-card-inner">Book Now</a>
+                            <a href="contact.html"
+                                class="thm-btn-outline rounded-pill w-100 fw-bold py-2 tilt-card-inner">Book Now</a>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="pricing-card popular tilt-card" data-tilt data-tilt-max="5">
                             <div class="popular-badge tilt-card-inner">Most Popular</div>
                             <h4 class="fw-bold mb-3 tilt-card-inner">Comprehensive Care</h4>
                             <div class="mb-4 tilt-card-inner">
-                                <span class="display-5 fw-bold text-primary">$180</span><span class="text-muted">/ 90 min</span>
+                                <span class="display-5 fw-bold text-primary">$180</span><span class="text-muted">/ 90
+                                    min</span>
                             </div>
                             <ul class="list-unstyled text-start text-muted mb-4 tilt-card-inner">
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Extended session time</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Ideal for EMDR or trauma</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> In-depth psychological evaluation</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Extended session time
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Ideal for EMDR or trauma
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> In-depth psychological
+                                    evaluation</li>
                             </ul>
-                            <a href="contact.html" class="thm-btn-primary rounded-pill w-100 fw-bold py-2 d-inline-block tilt-card-inner">Book Now</a>
+                            <a href="contact.html"
+                                class="thm-btn-primary rounded-pill w-100 fw-bold d-inline-block tilt-card-inner">Book
+                                Now</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row mt-5 justify-content-center" data-aos="fade-in">
                     <div class="col-lg-8 text-center bg-light p-4 rounded-4 border">
-                        <h5 class="fw-bold mb-3"><i class="fas fa-shield-alt text-primary me-2"></i> Accepted Insurances</h5>
-                        <p class="text-muted mb-0">We are in-network with BlueCross BlueShield, Aetna, Cigna, UnitedHealthcare, and Medicare. We also provide superbills for out-of-network reimbursement.</p>
+                        <h5 class="fw-bold mb-3"><i class="fas fa-shield-alt text-primary me-2"></i> Accepted Insurances
+                        </h5>
+                        <p class="text-muted mb-0">We are in-network with BlueCross BlueShield, Aetna, Cigna,
+                            UnitedHealthcare, and Medicare. We also provide superbills for out-of-network reimbursement.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -234,4 +360,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

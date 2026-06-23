@@ -7,27 +7,108 @@
     <title>Blog | Stackly Mental Health Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        .tilt-card { transform-style: preserve-3d; }
-        .tilt-card-inner { transform: translateZ(40px); }
-        
-        .blog-card { background: white; border-radius: 20px; overflow: hidden; border: 1px solid var(--outline-variant); box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column; transition: 0.3s; }
-        .blog-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 107, 86, 0.1); border-color: var(--primary-light); }
-        .blog-img { height: 240px; background-size: cover; background-position: center; border-bottom: 3px solid var(--primary); transition: 0.5s; }
-        
-        .featured-post { border-radius: 24px; overflow: hidden; position: relative; min-height: 400px; display: flex; align-items: flex-end; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
-        .featured-img { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 0; }
-        .featured-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%); z-index: 1; }
-        .featured-content { position: relative; z-index: 2; padding: 3rem; color: white; width: 100%; }
-        
-        .sidebar-widget { background: white; border-radius: 16px; padding: 2rem; border: 1px solid var(--outline-variant); margin-bottom: 2rem; }
-        .category-list a { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid var(--outline-variant); color: var(--ink); text-decoration: none; font-weight: 500; transition: 0.2s; }
-        .category-list a:hover { color: var(--primary); padding-left: 10px; }
-        .category-list a:last-child { border-bottom: none; }
+        .tilt-card {
+            transform-style: preserve-3d;
+        }
+
+        .tilt-card-inner {
+            transform: translateZ(40px);
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--outline-variant);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 107, 86, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .blog-img {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--primary);
+            transition: 0.5s;
+        }
+
+        .featured-post {
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .featured-img {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .featured-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+            z-index: 1;
+        }
+
+        .featured-content {
+            position: relative;
+            z-index: 2;
+            padding: 3rem;
+            color: white;
+            width: 100%;
+        }
+
+        .sidebar-widget {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--outline-variant);
+            margin-bottom: 2rem;
+        }
+
+        .category-list a {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--outline-variant);
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .category-list a:hover {
+            color: var(--primary);
+            padding-left: 10px;
+        }
+
+        .category-list a:last-child {
+            border-bottom: none;
+        }
     </style>
 </head>
 
@@ -48,7 +129,7 @@
         <div class="loader-content">
             <div class="loader-wrapper">
                 <div class="loader-ring"></div>
-                 <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
+                <span class="material-symbols-outlined hero-shape hero-shape-1 loader-icon">psychology</span>
             </div>
             <div class="loader-text" data-aos="fade-up">
                 Loading ...
@@ -67,11 +148,13 @@
             <div class="container-xl position-relative z-1" data-aos="fade-up">
                 <span class="eyebrow" data-tilt data-tilt-scale="1.1">Our Resources</span>
                 <h1 class="display-4 fw-bold mb-4" data-tilt data-tilt-scale="1.05">Insights for your mind.</h1>
-                <p class="lead" style="max-width: 700px; margin: 0 auto;">Expert-written articles on mental wellness, therapeutic techniques, and emotional growth.</p>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">Expert-written articles on mental wellness,
+                    therapeutic techniques, and emotional growth.</p>
             </div>
-             <!-- 3D Floating Elements -->
+            <!-- 3D Floating Elements -->
             <div class="floating-icons">
-                <i class="fas fa-spa hero-shape" style="top: 60%; right: 15%; font-size: 4rem; color: var(--primary);" data-tilt data-tilt-scale="1.5"></i>
+                <i class="fas fa-spa hero-shape" style="top: 60%; right: 15%; font-size: 4rem; color: var(--primary);"
+                    data-tilt data-tilt-scale="1.5"></i>
             </div>
         </section>
 
@@ -80,15 +163,21 @@
                 <!-- Featured Post (3D) -->
                 <div class="row mb-5" data-aos="fade-up">
                     <div class="col-12">
-                        <div class="featured-post tilt-card" data-tilt data-tilt-max="3" data-tilt-glare data-tilt-max-glare="0.2">
-                            <div class="featured-img" style="background-image: url('./assets/images/blog-2.webp');"></div>
+                        <div class="featured-post tilt-card" data-tilt data-tilt-max="3" data-tilt-glare
+                            data-tilt-max-glare="0.2">
+                            <div class="featured-img" style="background-image: url('./assets/images/blog-2.webp');">
+                            </div>
                             <div class="featured-overlay"></div>
                             <div class="featured-content tilt-card-inner">
-                                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Featured • Mental Wellness</span>
+                                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Featured • Mental
+                                    Wellness</span>
                                 <h2 class="display-5 fw-bold mb-3">The Quiet Power of Mindful Acceptance</h2>
-                                <p class="lead text-white-50 mb-4" style="max-width: 800px;">Why fighting our anxiety often makes it worse, and how adopting an attitude of radical acceptance can finally break the cycle of panic.</p>
+                                <p class="lead text-white-50 mb-4" style="max-width: 800px;">Why fighting our anxiety
+                                    often makes it worse, and how adopting an attitude of radical acceptance can finally
+                                    break the cycle of panic.</p>
                                 <div class="d-flex align-items-center gap-3">
-                                    <img src="./assets/images/author.webp" class="rounded-circle border border-2 border-white" width="50" alt="Author">
+                                    <img src="./assets/images/author.webp"
+                                        class="rounded-circle border border-2 border-white" width="50" alt="Author">
                                     <div>
                                         <h6 class="mb-0 fw-bold">Elena Rodriguez</h6>
                                         <small class="text-white-50">Oct 12, 2026 • 8 min read</small>
@@ -106,60 +195,82 @@
                             <!-- Post 1 -->
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
                                 <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
-                                    <div class="blog-img tilt-card-inner" style="background-image: url('./assets/images/blog-1.webp');"></div>
+                                    <div class="blog-img tilt-card-inner"
+                                        style="background-image: url('./assets/images/blog-1.webp');"></div>
                                     <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <span class="badge bg-soft-primary text-primary" style="background: rgba(0,107,86,0.1)">Relationships</span>
+                                            <span class="badge bg-soft-primary text-primary"
+                                                style="background: rgba(0,107,86,0.1)">Relationships</span>
                                             <small class="text-muted"><i class="far fa-clock me-1"></i> 5 min</small>
                                         </div>
                                         <h4 class="fw-bold mb-3">Setting Boundaries with Family Without Guilt</h4>
-                                        <p class="text-muted mb-4 flex-grow-1">Learn practical scripts and cognitive reframing techniques to establish healthy boundaries during holiday gatherings.</p>
-                                        <a href="#" class="fw-bold text-primary text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        <p class="text-muted mb-4 flex-grow-1">Learn practical scripts and cognitive
+                                            reframing techniques to establish healthy boundaries during holiday
+                                            gatherings.</p>
+                                        <a href="404.html"
+                                            class="fw-bold text-primary text-decoration-none mt-auto">Read Article <i
+                                                class="fas fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </article>
                             </div>
                             <!-- Post 2 -->
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                                 <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
-                                    <div class="blog-img tilt-card-inner" style="background-image: url('./assets/images/blog-4.webp');"></div>
+                                    <div class="blog-img tilt-card-inner"
+                                        style="background-image: url('./assets/images/blog-4.webp');"></div>
                                     <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <span class="badge" style="background: rgba(13,202,240,0.1); color: #0dcaf0;">Stress</span>
+                                            <span class="badge"
+                                                style="background: rgba(13,202,240,0.1); color: #0dcaf0;">Stress</span>
                                             <small class="text-muted"><i class="far fa-clock me-1"></i> 6 min</small>
                                         </div>
                                         <h4 class="fw-bold mb-3">Understanding the Physical Toll of Burnout</h4>
-                                        <p class="text-muted mb-4 flex-grow-1">Burnout isn't just in your head. Discover how chronic stress alters your cortisol levels and impacts immune function.</p>
-                                        <a href="#" class="fw-bold text-info text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        <p class="text-muted mb-4 flex-grow-1">Burnout isn't just in your head. Discover
+                                            how chronic stress alters your cortisol levels and impacts immune function.
+                                        </p>
+                                        <a href="404.html" class="fw-bold text-info text-decoration-none mt-auto">Read
+                                            Article <i class="fas fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </article>
                             </div>
                             <!-- Post 3 -->
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                                 <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
-                                    <div class="blog-img tilt-card-inner" style="background-image: url('./assets/images/blog-5.webp');"></div>
+                                    <div class="blog-img tilt-card-inner"
+                                        style="background-image: url('./assets/images/blog-5.webp');"></div>
                                     <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <span class="badge bg-soft-warning text-warning" style="background: rgba(255,193,7,0.1)">Therapy Tips</span>
+                                            <span class="badge bg-soft-warning text-warning"
+                                                style="background: rgba(255,193,7,0.1)">Therapy Tips</span>
                                             <small class="text-muted"><i class="far fa-clock me-1"></i> 4 min</small>
                                         </div>
                                         <h4 class="fw-bold mb-3">What to Bring to Your First Therapy Session</h4>
-                                        <p class="text-muted mb-4 flex-grow-1">Nervous about starting therapy? Here is a checklist of thoughts, questions, and expectations to bring with you.</p>
-                                        <a href="#" class="fw-bold text-warning text-decoration-none mt-auto">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        <p class="text-muted mb-4 flex-grow-1">Nervous about starting therapy? Here is a
+                                            checklist of thoughts, questions, and expectations to bring with you.</p>
+                                        <a href="404.html"
+                                            class="fw-bold text-warning text-decoration-none mt-auto">Read Article <i
+                                                class="fas fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </article>
                             </div>
                             <!-- Post 4 -->
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                                 <article class="blog-card tilt-card" data-tilt data-tilt-max="5">
-                                    <div class="blog-img tilt-card-inner" style="background-image: url('./assets/images/blog-6.webp');"></div>
+                                    <div class="blog-img tilt-card-inner"
+                                        style="background-image: url('./assets/images/blog-6.webp');"></div>
                                     <div class="p-4 d-flex flex-column flex-grow-1 tilt-card-inner">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <span class="badge" style="background: rgba(32,201,151,0.1); color: #20c997;">Child Psych</span>
+                                            <span class="badge"
+                                                style="background: rgba(32,201,151,0.1); color: #20c997;">Child
+                                                Psych</span>
                                             <small class="text-muted"><i class="far fa-clock me-1"></i> 7 min</small>
                                         </div>
                                         <h4 class="fw-bold mb-3">Recognizing Hidden Anxiety in Teenagers</h4>
-                                        <p class="text-muted mb-4 flex-grow-1">Sometimes teenage anxiety doesn't look like fear; it looks like anger, perfectionism, or sudden isolation.</p>
-                                        <a href="#" class="fw-bold text-decoration-none mt-auto" style="color: #20c997;">Read Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        <p class="text-muted mb-4 flex-grow-1">Sometimes teenage anxiety doesn't look
+                                            like fear; it looks like anger, perfectionism, or sudden isolation.</p>
+                                        <a href="404.html" class="fw-bold text-decoration-none mt-auto"
+                                            style="color: #20c997;">Read Article <i
+                                                class="fas fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </article>
                             </div>
@@ -168,11 +279,13 @@
                         <!-- Pagination -->
                         <nav class="mt-5" data-aos="fade-up">
                             <ul class="pagination justify-content-center">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="#" style="background-color: var(--primary); border-color: var(--primary);">1</a></li>
-                                <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link text-primary" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link text-primary" href="#">Next</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="404.html">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href=""
+                                        style="background-color: var(--primary); border-color: var(--primary);">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-primary" href="404.html">2</a></li>
+                                <li class="page-item"><a class="page-link text-primary" href="404.html">3</a></li>
+                                <li class="page-item"><a class="page-link text-primary" href="404.html">Next</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -182,31 +295,40 @@
                         <!-- Search Widget -->
                         <div class="sidebar-widget tilt-card" data-tilt data-tilt-max="2">
                             <h5 class="fw-bold mb-4">Search Articles</h5>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Type keyword...">
-                                <button class="btn text-white" style="background: var(--primary);"><i class="fas fa-search"></i></button>
-                            </div>
+                            <form id="blogSearchForm" class="input-group">
+                                <input type="text" id="blogSearchInput" class="form-control"
+                                    placeholder="Type keyword...">
+                                <button class="btn text-white" style="background: var(--primary);"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+
                         </div>
 
                         <!-- Categories Widget -->
                         <div class="sidebar-widget tilt-card" data-tilt data-tilt-max="2">
                             <h5 class="fw-bold mb-4">Categories</h5>
                             <div class="category-list">
-                                <a href="#">Anxiety & Depression <span class="badge bg-light text-muted">24</span></a>
-                                <a href="#">Mindfulness & Meditation <span class="badge bg-light text-muted">18</span></a>
-                                <a href="#">Relationships & Couples <span class="badge bg-light text-muted">12</span></a>
-                                <a href="#">Child & Adolescent <span class="badge bg-light text-muted">9</span></a>
-                                <a href="#">Therapy Guides <span class="badge bg-light text-muted">7</span></a>
+                                <a href="404.html">Anxiety & Depression <span
+                                        class="badge bg-light text-muted">24</span></a>
+                                <a href="404.html">Mindfulness & Meditation <span
+                                        class="badge bg-light text-muted">18</span></a>
+                                <a href="404.html">Relationships & Couples <span
+                                        class="badge bg-light text-muted">12</span></a>
+                                <a href="404.html">Child & Adolescent <span
+                                        class="badge bg-light text-muted">9</span></a>
+                                <a href="404.html">Therapy Guides <span class="badge bg-light text-muted">7</span></a>
                             </div>
                         </div>
 
-                        <!-- Newsletter Widget -->
-                        <div class="sidebar-widget text-center bg-primary text-white border-0 tilt-card" data-tilt data-tilt-max="3" data-tilt-glare data-tilt-max-glare="0.5">
+                        <!-- Wellness Journey Widget -->
+                        <div class="sidebar-widget text-center bg-primary text-white border-0">
                             <i class="fas fa-envelope-open-text fs-1 mb-3 text-white-50"></i>
-                            <h5 class="fw-bold mb-3">Weekly Wellness Tips</h5>
-                            <p class="text-white-50 small mb-4">Get practical mental health advice delivered straight to your inbox every Sunday morning.</p>
-                            <input type="email" class="form-control mb-3 text-center" placeholder="Your Email Address">
-                            <button class="btn btn-light w-100 fw-bold text-primary rounded-pill">Subscribe Now</button>
+                            <h5 class="fw-bold mb-3">Start Your Wellness Journey Today</h5>
+                            <p class="text-white-50 small mb-4">Connect with our mental health professionals and take
+                                the first step toward a healthier, happier life.</p>
+                            <!-- <button class="btn btn-light w-100 fw-bold text-primary rounded-pill">Subscribe Now</button> -->
+                            <a href="contact.html" class="btn btn-light w-100 fw-bold text-primary rounded-pill">Book a
+                                Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -219,5 +341,43 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchForm = document.getElementById('blogSearchForm');
+            const searchInput = document.getElementById('blogSearchInput');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            if (searchForm) {
+                searchForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const term = searchInput.value.toLowerCase().trim();
+
+                    if (!term) {
+                        // Show all posts if search is empty
+                        blogCards.forEach(card => card.closest('.col-md-6').style.display = 'block');
+                        return;
+                    }
+
+                    let matches = 0;
+                    blogCards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        const parentCol = card.closest('.col-md-6');
+                        if (text.includes(term)) {
+                            parentCol.style.display = 'block';
+                            matches++;
+                        } else {
+                            parentCol.style.display = 'none';
+                        }
+                    });
+
+                    // If no blogs match the keyword, redirect to 404
+                    if (matches === 0) {
+                        window.location.href = '404.html';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>
