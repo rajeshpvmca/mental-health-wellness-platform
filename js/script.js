@@ -105,13 +105,8 @@ window.addEventListener("load", async () => {
       loadComponent("footer-placeholder", "footer.html"),
     ]);
 
-    initAOS();
     initHeroSwiper();
     initTestimonialSwiper();
-
-    if (typeof AOS !== "undefined") {
-      AOS.refresh();
-    }
 
     const preloader = document.querySelector(".preloader");
 
@@ -121,6 +116,12 @@ window.addEventListener("load", async () => {
 
       document.body.classList.add("content-loaded");
       document.body.classList.remove("loading");
+
+      // Initialize AOS after preloader starts to fade out
+      initAOS();
+      if (typeof AOS !== "undefined") {
+        AOS.refresh();
+      }
 
       setTimeout(() => {
         preloader.remove();

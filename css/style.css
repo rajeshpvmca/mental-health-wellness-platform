@@ -1405,3 +1405,26 @@ h2 {
     transform: translateY(0);
     transition-delay: 0.9s;
 }
+
+/* Page Hero Inner Animations */
+.page-hero .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    animation: heroZoom 15s ease-in-out forwards;
+}
+.page-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(248, 249, 255, 0.95) 0%, rgba(248, 249, 255, 0.85) 50%, rgba(248, 249, 255, 0.4) 100%);
+}
+.page-hero .container-xl,
+.page-hero .floating-icons {
+    z-index: 2;
+    position: relative;
+}
+@keyframes heroZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
